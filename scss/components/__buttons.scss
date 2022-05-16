@@ -1,0 +1,29 @@
+.btn-primary-web {
+  background: $primary-color;
+  color: $white-clr;
+  border: 0;
+}
+.btn-primary-web:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.btn-primary-web:hover {
+  background: hsla(0, 100%, 62%, 0.85);
+}
+
+.btn-black-border {
+  background: transparent;
+  color: $black-clr;
+  border: 1px solid $black-clr;
+}
+.btn-web {
+  padding: 1.5rem 3.5rem;
+  outline: none;
+  border-radius: 6px;
+  font: 400 18px/22.77px 'Rubik', sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-web:hover {
+  text-decoration: none;
+}

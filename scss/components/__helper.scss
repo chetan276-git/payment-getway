@@ -1,0 +1,133 @@
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: end;
+}
+.flex-d-column {
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.d-inline {
+  display: inline;
+}
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block !important;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
+.z-index-100 {
+  z-index: 100;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.bg-transprent {
+  background: transparent !important;
+}
+.box-shadow-none {
+  box-shadow: none;
+}
+.radius-50 {
+  border-radius: 50%;
+}
+.border-radius-5 {
+  border-radius: 5px;
+}
+.object-cover {
+  object-fit: cover;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.h-100 {
+  height: 100%;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50vw {
+  width: 50vw;
+}
+.m-auto {
+  margin: 0 auto;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+/*Padding*/
+.py-10 {
+  padding: 10px 0;
+}
+.pt-25 {
+  padding-top: 25px;
+}
+.pt-55 {
+  padding-top: 55px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pl-30 {
+  padding-left: 30px;
+}
+.pb-25 {
+  padding-bottom: 25px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}

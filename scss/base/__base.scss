@@ -1,0 +1,61 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  font-family: 'PT Serif', serif;
+  font-size: 1.6rem;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+p {
+  margin: 0;
+}
+
+.title {
+  h2 {
+    font: 700 6.2rem/7.5rem 'PT Serif', serif;
+    margin-bottom: 3rem;
+    z-index: 1;
+  }
+  .title-bg-shape {
+    width: 28%;
+    z-index: -1;
+  }
+  p {
+    font: 400 24px/28.44px 'Rubik', sans-serif;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .remove-gutter {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
