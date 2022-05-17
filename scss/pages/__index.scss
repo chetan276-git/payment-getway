@@ -179,29 +179,40 @@ main {
         line-height: 4.5rem;
       }
     }
+    .card-wrapper {
+      margin-top: 12rem;
+      .card {
+        padding: 4.5rem 3.5rem;
+        transition: 0.6s;
+        &:hover {
+          box-shadow: 0px 20px 80px rgba(8, 15, 21, 0.0529529);
+        }
+        i {
+          font-size: 4rem;
+        }
+        .card-title {
+          margin-top: 2rem;
+          font: 700 2.8rem/4rem 'PT Serif', serif;
+        }
+        .card-text {
+          font: 400 2rem/3.4rem 'Rubik', sans-serif;
+        }
+      }
+    }
   }
   #another-money {
     padding: 25.69rem 0;
     background: $bg-lightblue;
 
-    &:after {
-      content: '';
-      top: -6%;
-      right: 5%;
-      width: 14rem;
-      height: 14rem;
-      background: url('../images/another-money-after.png');
-      background-size: cover;
-      position: absolute;
-    }
-
     .content-wrapper {
       .title {
         .title-bg-shape {
-          width: 40%;
+          width: 45%;
           height: 100%;
-          top: 0%;
-          right: 0%;
+          top: -3%;
+          right: 13%;
+          z-index: 2;
+          transform: rotate(8deg);
         }
         h2 {
           margin-bottom: 7.5rem;
@@ -217,9 +228,19 @@ main {
   #frequently-asked-questions {
     padding: 25rem 0 50.57rem 0;
     .title {
+      .title-main {
+        .title-bg-shape {
+          width: 60%;
+          height: 100%;
+          bottom: -50%;
+          left: -4%;
+          z-index: -1;
+        }
+      }
       p {
         font-size: 2rem;
         line-height: 3.6rem;
+        margin-top: 10rem;
         margin-bottom: 5.5rem;
       }
     }
@@ -334,6 +355,16 @@ main {
         .have-questions-wrapper {
           padding: 8rem 4rem;
           .heading {
+            .main-title {
+              z-index: 2;
+              .title-bg-shape {
+                width: 60%;
+                height: 100%;
+                bottom: -50%;
+                left: -4%;
+                z-index: -1;
+              }
+            }
             h2 {
               color: $black-clr;
               font: 700 6rem/7.2rem 'PT Serif', serif;
@@ -364,6 +395,17 @@ main {
     .we-talk-main-wrapper {
       padding: 35.6rem 0 30rem 0;
       .title {
+        .main-title {
+          z-index: 2;
+          .title-bg-shape {
+            width: 11%;
+            height: 100%;
+            top: -2%;
+            left: 19.5%;
+            z-index: -1;
+            transform: rotate(2deg);
+          }
+        }
         h5 {
           font: 400 2rem/2.3rem 'Roboto', sans-serif;
           color: $black-clr;

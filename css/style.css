@@ -298,27 +298,47 @@ main #thousands-sellers .title P {
   line-height: 4.5rem;
 }
 
+main #thousands-sellers .card-wrapper {
+  margin-top: 12rem;
+}
+
+main #thousands-sellers .card-wrapper .card {
+  padding: 4.5rem 3.5rem;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+main #thousands-sellers .card-wrapper .card:hover {
+  -webkit-box-shadow: 0px 20px 80px rgba(8, 15, 21, 0.0529529);
+          box-shadow: 0px 20px 80px rgba(8, 15, 21, 0.0529529);
+}
+
+main #thousands-sellers .card-wrapper .card i {
+  font-size: 4rem;
+}
+
+main #thousands-sellers .card-wrapper .card .card-title {
+  margin-top: 2rem;
+  font: 700 2.8rem/4rem 'PT Serif', serif;
+}
+
+main #thousands-sellers .card-wrapper .card .card-text {
+  font: 400 2rem/3.4rem 'Rubik', sans-serif;
+}
+
 main #another-money {
   padding: 25.69rem 0;
   background: #c4eded;
 }
 
-main #another-money:after {
-  content: '';
-  top: -6%;
-  right: 5%;
-  width: 14rem;
-  height: 14rem;
-  background: url("../images/another-money-after.png");
-  background-size: cover;
-  position: absolute;
-}
-
 main #another-money .content-wrapper .title .title-bg-shape {
-  width: 40%;
+  width: 45%;
   height: 100%;
-  top: 0%;
-  right: 0%;
+  top: -3%;
+  right: 13%;
+  z-index: 2;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
 }
 
 main #another-money .content-wrapper .title h2 {
@@ -334,9 +354,18 @@ main #frequently-asked-questions {
   padding: 25rem 0 50.57rem 0;
 }
 
+main #frequently-asked-questions .title .title-main .title-bg-shape {
+  width: 60%;
+  height: 100%;
+  bottom: -50%;
+  left: -4%;
+  z-index: -1;
+}
+
 main #frequently-asked-questions .title p {
   font-size: 2rem;
   line-height: 3.6rem;
+  margin-top: 10rem;
   margin-bottom: 5.5rem;
 }
 
@@ -485,6 +514,18 @@ main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper 
   padding: 8rem 4rem;
 }
 
+main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading .main-title {
+  z-index: 2;
+}
+
+main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading .main-title .title-bg-shape {
+  width: 60%;
+  height: 100%;
+  bottom: -50%;
+  left: -4%;
+  z-index: -1;
+}
+
 main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading h2 {
   color: black;
   font: 700 6rem/7.2rem 'PT Serif', serif;
@@ -516,6 +557,20 @@ main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper 
 
 main #talk-about-finance .we-talk-main-wrapper {
   padding: 35.6rem 0 30rem 0;
+}
+
+main #talk-about-finance .we-talk-main-wrapper .title .main-title {
+  z-index: 2;
+}
+
+main #talk-about-finance .we-talk-main-wrapper .title .main-title .title-bg-shape {
+  width: 11%;
+  height: 100%;
+  top: -2%;
+  left: 19.5%;
+  z-index: -1;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
 }
 
 main #talk-about-finance .we-talk-main-wrapper .title h5 {
