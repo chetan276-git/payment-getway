@@ -1,0 +1,83 @@
+footer {
+  padding: 26.6rem 0 8rem 0;
+
+  .footer-shape {
+    width: 14.5rem;
+    height: 23.46rem;
+    top: 25%;
+    right: 37%;
+  }
+
+  .log-wrapper {
+    ul {
+      margin-top: 3rem;
+
+      li {
+        a {
+          color: $black-clr;
+          font: 400 2rem/2.4rem 'Rubik', sans-serif;
+        }
+      }
+    }
+  }
+  .sing-up-media-links {
+    h4 {
+      font: 400 1.4rem/2.8rem 'Rubik', sans-serif;
+      color: #343434;
+      opacity: 0.5;
+      letter-spacing: 1.4px;
+    }
+    form {
+      gap: 20px;
+
+      input,
+      button {
+        height: 5rem;
+      }
+      input {
+        font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+        border: 2px solid #000000;
+        border-radius: 5px;
+        &::placeholder {
+          color: #343434;
+          font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+          opacity: 0.45;
+        }
+        &:focus,
+        &:active {
+          outline: none;
+          box-shadow: none;
+          border: 2px solid #000000;
+          border-radius: 5px;
+        }
+      }
+
+      button {
+        max-width: 13rem;
+        width: 13rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font: 400 1.6rem 'Rubik', sans-serif;
+      }
+    }
+    .media-links {
+      ul {
+        gap: 20px;
+        li {
+          a {
+            i {
+              font-size: 1.8rem;
+              color: $black-clr;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    p {
+      font: 400 1.8rem/2.1rem 'Rubik', sans-serif;
+      color: #343434;
+    }
+  }
+}

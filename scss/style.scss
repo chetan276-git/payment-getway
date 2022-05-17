@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto&family=Rubik&display=swap');
 
+@import './base/_base';
 @import './abstracts/_mixin';
 @import './abstracts/_variable';
 @import './components/_buttons';
-@import './base/_base';
+
 @import './abstracts/_mixin';
 
 @import './pages/_index';
+@import './components/_footer';
