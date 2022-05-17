@@ -19,6 +19,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -93,7 +99,7 @@ p {
   padding: 1.5rem 3.5rem;
   outline: none;
   border-radius: 6px;
-  font: 400 18px/22.77px 'Rubik', sans-serif;
+  font: 400 1.8rem/22.77px 'Rubik', sans-serif;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -111,6 +117,18 @@ p {
 
 .banner-section h3 {
   font: 700 4.8rem/63.6px 'PT Serif', serif;
+}
+
+.banner-section .content_wrapper::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../images/banner-left-side-shapes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner-section .content_wrapper h1 {
@@ -243,8 +261,10 @@ main #accepting-payments .services-wrappers .services-wrapper {
   border-radius: 10px;
 }
 
-main #accepting-payments .services-wrappers .services-wrapper .services-content {
-  padding-left: 11.5rem;
+@media (min-width: 768px) {
+  main #accepting-payments .services-wrappers .services-wrapper .services-content {
+    padding-left: 11.5rem;
+  }
 }
 
 main #accepting-payments .services-wrappers .services-wrapper .services-content h6 {
@@ -556,7 +576,7 @@ main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper 
 }
 
 main #talk-about-finance .we-talk-main-wrapper {
-  padding: 35.6rem 0 30rem 0;
+  padding: 35.6rem 0 20rem 0;
 }
 
 main #talk-about-finance .we-talk-main-wrapper .title .main-title {
@@ -640,6 +660,15 @@ main #talk-about-finance .your-payment-over .heading p {
 @media (min-width: 768px) {
   .dsk-display-none {
     display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-section .oval-image {
+    display: none;
+  }
+  main #accepting-payments .services-wrappers .services-wrapper {
+    padding: 3rem 3rem;
   }
 }
 
