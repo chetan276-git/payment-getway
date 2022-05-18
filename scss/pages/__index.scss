@@ -1,18 +1,20 @@
 .banner-section {
   min-height: 100vh;
   background: url('../images/banner-bg.png');
-  padding: 5rem 0 20rem 0;
+  padding: 20rem 0 20rem 0;
 
   h3 {
     font: 700 4.8rem/63.6px 'PT Serif', serif;
   }
 
   .content_wrapper {
+    z-index: 2;
     &::after {
       content: '';
       width: 100%;
       height: 100%;
       position: absolute;
+      z-index: -1;
       left: 0;
       top: 0;
       background: url('../images/banner-left-side-shapes.png');
@@ -57,10 +59,13 @@
     }
   }
   .oval-image {
-    width: 45%;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 40%;
     right: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner-section .oval-image {
+    display: none;
   }
 }
 main {
@@ -219,12 +224,13 @@ main {
 
     .content-wrapper {
       .title {
+        z-index: 1;
         .title-bg-shape {
           width: 45%;
           height: 100%;
           top: -3%;
           right: 13%;
-          z-index: 2;
+          z-index: -1;
           transform: rotate(8deg);
         }
         h2 {
@@ -307,7 +313,7 @@ main {
           top: -10%;
           left: -5%;
           position: absolute;
-          z-index: 0;
+          z-index: -1;
           background: url(../images/haveq-after.png) no-repeat;
           background-size: cover;
         }
@@ -380,7 +386,7 @@ main {
             }
             h2 {
               color: $black-clr;
-              font: 700 6rem/7.2rem 'PT Serif', serif;
+              font: 700 5rem/7.2rem 'PT Serif', serif;
             }
             P {
               margin-top: 4rem;
@@ -477,17 +483,322 @@ main {
     }
   }
 }
-
 @media (min-width: 768px) {
   .dsk-display-none {
     display: block;
   }
 }
 @media (max-width: 768px) {
-  .banner-section .oval-image {
-    display: none;
+  main {
+    h3 {
+      font: 700 2.8rem/32px 'PT Serif', serif;
+    }
+  }
+  .mv-mb-20 {
+    margin-bottom: 20px;
+  }
+  .banner-section {
+    padding: 5rem 0 7.5rem 0;
+  }
+
+  .banner-section .content_wrapper .button-wrapper {
+    gap: 15px;
+  }
+  .banner-section .content_wrapper h1 {
+    font: 700 6rem/7.5rem 'PT Serif', serif;
+  }
+  .banner-section .content_wrapper .button-wrapper {
+    margin-top: 25px;
+  }
+  main #accepting-payments .over-services .over-inner-wrapper {
+    padding: 4rem;
+  }
+  main #accepting-payments {
+    padding: 33rem 0 7.5rem 0;
+  }
+  main #accepting-payments .services-wrappers:after {
+    width: 8rem;
+    height: 6.5rem;
+    top: 0;
+    left: -3%;
+  }
+  main #accepting-payments .services-wrappers {
+    margin-top: 5rem;
   }
   main #accepting-payments .services-wrappers .services-wrapper {
-    padding: 3rem 3rem;
+    padding: 3rem 4rem;
+  }
+  main
+    #accepting-payments
+    .services-wrappers
+    .services-wrapper
+    .services-content {
+    justify-content: start !important;
+    margin-top: 20px;
+  }
+  main
+    #accepting-payments
+    .services-wrappers
+    .services-wrapper
+    .services-content
+    h5 {
+    font: 400 3.2rem/4.4rem 'PT Serif', serif;
+  }
+  main #accepting-payments .services-wrappers:before {
+    width: 9.5rem;
+    height: 7.3rem;
+    right: -4%;
+    bottom: -2%;
+    background-size: cover;
+    transform: rotate(90deg);
+  }
+  main #accepting-payments .having-issues h3 {
+    margin-bottom: 25px;
+  }
+  main #thousands-sellers {
+    padding: 7.5rem 0;
+  }
+  main #thousands-sellers .title p {
+    margin-top: 2rem;
+  }
+  main #thousands-sellers .card-wrapper {
+    margin-top: 4rem;
+  }
+  main #another-money {
+    padding: 7.5rem 0;
+  }
+  main #another-money .content-wrapper {
+    margin-top: 6.5rem;
+  }
+  main #another-money .content-wrapper .title .title-bg-shape {
+    width: 150px;
+    top: -5%;
+    right: 15%;
+  }
+  main #another-money .content-wrapper .title h2 {
+    margin-bottom: 3.5rem;
+  }
+  main #another-money .content-wrapper .title p {
+    margin-bottom: 6rem;
+  }
+  #frequently-asked-questions .accordion {
+    margin-top: 6rem;
+  }
+  main #talk-about-finance .have-questions {
+    padding: 0 15px;
+    top: -20%;
+  }
+  main #talk-about-finance .have-questions .inner-wrapper:after {
+    content: '';
+    width: 12rem;
+    height: 10rem;
+    z-index: -1;
+  }
+  main #talk-about-finance .have-questions .inner-wrapper .border-right {
+    border-right: 0 !important;
+  }
+  main
+    #talk-about-finance
+    .have-questions
+    .inner-wrapper
+    .request-call-wrapper {
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+  main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper,
+  main
+    #talk-about-finance
+    .have-questions
+    .inner-wrapper
+    .have-questions-wrapper {
+    padding: 3rem 4rem;
+  }
+  main
+    #talk-about-finance
+    .have-questions
+    .inner-wrapper
+    .have-questions-wrapper
+    .heading
+    h2 {
+    font: 700 3rem/4.2rem 'PT Serif', serif;
+  }
+  main
+    #talk-about-finance
+    .have-questions
+    .inner-wrapper
+    .have-questions-wrapper
+    .heading
+    .main-title
+    .title-bg-shape {
+    width: 40%;
+  }
+  main #frequently-asked-questions {
+    padding: 7.5rem 0 75.5rem 0;
+  }
+  main #frequently-asked-questions .title p {
+    margin-top: 4rem;
+  }
+  main #frequently-asked-questions .title .title-main .title-bg-shape {
+    width: 50%;
+  }
+  main
+    #talk-about-finance
+    .have-questions
+    .inner-wrapper
+    .request-call-wrapper
+    form
+    .form-group {
+    height: 45px;
+  }
+  main #talk-about-finance .your-payment-over .heading h3 {
+    font: 700 3.6rem/4.5rem 'PT Serif', serif;
+  }
+  main #talk-about-finance .your-payment-over {
+    width: 95% !important;
+    bottom: -6%;
+    text-align: center;
+  }
+  main #talk-about-finance .we-talk-main-wrapper .cards-wrapper {
+    margin-top: 5rem;
+  }
+  main #talk-about-finance .your-payment-over .heading p {
+    margin-bottom: 5.5rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .title h2 {
+    font: 700 5.2rem/7rem 'PT Serif', serif;
+  }
+  .title p {
+    font: 400 18px/24.44px 'Rubik', sans-serif;
+  }
+  .tab-mt-30 {
+    margin-top: 30px;
+  }
+  .banner-section {
+    padding: 20rem 0 13.5rem 0;
+  }
+  main #accepting-payments .over-services .over-inner-wrapper {
+    padding: 3rem;
+  }
+  main
+    #accepting-payments
+    .over-services
+    .over-inner-wrapper
+    .content-wrapper
+    .over-wrapper-content
+    h4
+    span {
+    display: inline-block;
+  }
+  main
+    #accepting-payments
+    .services-wrappers
+    .services-wrapper
+    .services-content {
+    padding-left: 0;
+  }
+  main
+    #accepting-payments
+    .services-wrappers
+    .services-wrapper
+    .services-content
+    h5 {
+    font: 400 3.2rem/4.4rem 'PT Serif', serif;
+  }
+  main
+    #accepting-payments
+    .services-wrappers
+    .services-wrapper
+    .services-content
+    .bottom-content
+    p {
+    font: 400 1.8rem/2.6rem 'Roboto', sans-serif;
+  }
+  main #accepting-payments .having-issues h3 {
+    font: 700 2.8rem/43.6px 'PT Serif', serif;
+    margin-bottom: 40px;
+  }
+  main #thousands-sellers .title P {
+    line-height: 3rem;
+  }
+  main #thousands-sellers,
+  main #another-money {
+    padding: 7.5rem 0;
+  }
+  main #thousands-sellers .title .title-bg-shape {
+    width: 55%;
+    top: -7%;
+    left: -6%;
+  }
+  main #thousands-sellers .card-wrapper {
+    margin-top: 7rem;
+  }
+  main #another-money .content-wrapper .title .title-bg-shape {
+    width: 35%;
+    top: -5%;
+  }
+  main #another-money .content-wrapper .title h2 {
+    margin-bottom: 5rem;
+  }
+  main #another-money .content-wrapper .title p {
+    margin-bottom: 5rem;
+  }
+  main #frequently-asked-questions {
+    padding-top: 7.5rem;
+  }
+  main #frequently-asked-questions .title .title-main .title-bg-shape {
+    width: 43%;
+  }
+  main #frequently-asked-questions .title p {
+    margin: 5rem 0 6rem 0;
+  }
+  main #frequently-asked-questions .accordion {
+    margin-top: 6rem;
+  }
+  main
+    #talk-about-finance
+    .have-questions
+    .inner-wrapper
+    .request-call-wrapper {
+    padding: 3.5rem 3.5rem;
+  }
+  main
+    #talk-about-finance
+    .have-questions
+    .inner-wrapper
+    .have-questions-wrapper
+    .heading
+    h2 {
+    font: 700 2.8rem/4.2rem 'PT Serif', serif;
+  }
+  main
+    #talk-about-finance
+    .have-questions
+    .inner-wrapper
+    .have-questions-wrapper
+    .heading
+    P {
+    font: 400 1.8rem/2.4rem 'Rubik', sans-serif;
+  }
+  main #talk-about-finance .your-payment-over .heading h3 {
+    font: 700 2.8rem/2.7rem 'PT Serif', serif;
+  }
+  main #talk-about-finance .we-talk-main-wrapper .cards-wrapper {
+    margin-top: 5rem;
+  }
+  main
+    #talk-about-finance
+    .we-talk-main-wrapper
+    .cards-wrapper
+    .card
+    .card-body
+    .card-title {
+    font: 700 2rem/2.6rem 'PT Serif', serif;
+  }
+  main #talk-about-finance .your-payment-over {
+    text-align: center;
+  }
+  main #talk-about-finance .your-payment-over .heading p {
+    margin-bottom: 5rem;
   }
 }

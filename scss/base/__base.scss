@@ -16,7 +16,7 @@ html {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
   }
 }
 li {
@@ -58,9 +58,15 @@ p {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .remove-gutter {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+@media screen and (max-width: 768px) {
+  .title {
+    h2 {
+      font: 700 4.2rem/4.5rem 'PT Serif', serif;
+      margin-bottom: 3rem;
+      z-index: 1;
+    }
+    p {
+      font: 400 18px/20.44px 'Rubik', sans-serif;
+    }
   }
 }

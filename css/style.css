@@ -21,7 +21,7 @@ html {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
   }
 }
 
@@ -67,10 +67,14 @@ p {
   font: 400 24px/28.44px 'Rubik', sans-serif;
 }
 
-@media screen and (max-width: 480px) {
-  .remove-gutter {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+@media screen and (max-width: 768px) {
+  .title h2 {
+    font: 700 4.2rem/4.5rem 'PT Serif', serif;
+    margin-bottom: 3rem;
+    z-index: 1;
+  }
+  .title p {
+    font: 400 18px/20.44px 'Rubik', sans-serif;
   }
 }
 
@@ -109,14 +113,317 @@ p {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .btn-web {
+    padding: 1.5rem 3rem;
+    white-space: nowrap;
+  }
+}
+
+header {
+  z-index: 22;
+}
+
+header .navbar input[type='checkbox'],
+header .navbar .hamburger-lines {
+  display: none;
+}
+
+header .btn-web {
+  padding: 1rem 3.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header .btn-web {
+    display: block;
+  }
+}
+
+header .btn-primary-web:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  header .header-topbar {
+    display: none;
+  }
+}
+
+header .header-topbar .navlinks {
+  gap: 30px;
+}
+
+header .header-topbar .navlinks li a {
+  font: 400 1.8rem/2.5px 'PT Serif', serif;
+  color: black;
+}
+
+header .header-topbar .navlinks li a:hover {
+  text-decoration: none;
+}
+
+header .sidebar-content-mobileview a {
+  font: 400 1.8rem/3.3rem 'Rubik', sans-serif;
+  display: block;
+  margin-bottom: 15px;
+  color: black;
+}
+
+header .sidebar-content-mobileview a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+header .sidebar-content-mobileview .media-links-sidebar ul {
+  gap: 5px !important;
+}
+
+header .bottom-content-sidebar .follow-us-on h6 {
+  font: 400 1.8rem 'PT Serif', serif;
+}
+
+header .bottom-content-sidebar .follow-us-on .media-links ul {
+  gap: 5px;
+}
+
+header .bottom-content-sidebar .follow-us-on .media-links ul .fab {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  header .sidebar-content-mobileview,
+  header .bottom-content-sidebar .follow-us-on {
+    display: none;
+  }
+}
+
+header .navbar {
+  color: black;
+}
+
+header .navbar-container {
+  height: 64px;
+  -webkit-box-shadow: 0px -10px 20px rgba(0, 54, 110, 0.057595);
+          box-shadow: 0px -10px 20px rgba(0, 54, 110, 0.057595);
+  border-radius: 8px;
+}
+
+header .menu-items {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  font-size: 1.8rem;
+}
+
+header .menu-items li,
+header button {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar a {
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+header button {
+  padding: 8px 19px;
+  margin-right: 20px;
+  background-color: #0088a9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 0s;
+  transition: all ease-in-out 0s;
+}
+
+header button:hover a {
+  color: #0088a9;
+}
+
+header button:hover {
+  background: #fff;
+  color: #0088a9;
+}
+
+header .navbar a:hover {
+  color: #0088a9;
+}
+
+@media (max-width: 768px) {
+  header .navbar-container input[type='checkbox'],
+  header .navbar-container .hamburger-lines {
+    display: block;
+  }
+  header .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+  header .navbar-container input[type='checkbox'] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  header .navbar-container .hamburger-lines {
+    display: block;
+    height: 23px;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background: #000;
+  }
+  header .navbar-container .hamburger-lines .line1 {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  header .navbar-container .hamburger-lines .line2 {
+    -webkit-transition: -webkit-transform 0.1s ease-in-out;
+    transition: -webkit-transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  }
+  header .navbar-container .hamburger-lines .line3 {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  header .navbar .menu-items {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    width: 70vw;
+    -webkit-transform: translate(-150%);
+            transform: translate(-150%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    overflow: scroll;
+    padding: 50px 15px 15px 15px;
+  }
+  header .navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  header button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 1rem;
+  }
+  header .logo {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 1.7rem;
+  }
+  header .navbar-container input[type='checkbox']:checked ~ .menu-items {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 70vw;
+  }
+  header .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line1 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line2 {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  header .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3 {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 500px) {
+  header .navbar-container input[type='checkbox']:checked ~ .logo {
+    display: none;
+  }
+}
+
 .banner-section {
   min-height: 100vh;
   background: url("../images/banner-bg.png");
-  padding: 5rem 0 20rem 0;
+  padding: 20rem 0 20rem 0;
 }
 
 .banner-section h3 {
   font: 700 4.8rem/63.6px 'PT Serif', serif;
+}
+
+.banner-section .content_wrapper {
+  z-index: 2;
 }
 
 .banner-section .content_wrapper::after {
@@ -124,6 +431,7 @@ p {
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: -1;
   left: 0;
   top: 0;
   background: url("../images/banner-left-side-shapes.png");
@@ -176,11 +484,14 @@ p {
 }
 
 .banner-section .oval-image {
-  width: 45%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  width: 40%;
   right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner-section .oval-image {
+    display: none;
+  }
 }
 
 main h3 {
@@ -351,12 +662,16 @@ main #another-money {
   background: #c4eded;
 }
 
+main #another-money .content-wrapper .title {
+  z-index: 1;
+}
+
 main #another-money .content-wrapper .title .title-bg-shape {
   width: 45%;
   height: 100%;
   top: -3%;
   right: 13%;
-  z-index: 2;
+  z-index: -1;
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
 }
@@ -444,7 +759,7 @@ main #talk-about-finance .have-questions .inner-wrapper:after {
   top: -10%;
   left: -5%;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   background: url(../images/haveq-after.png) no-repeat;
   background-size: cover;
 }
@@ -548,7 +863,7 @@ main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper 
 
 main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading h2 {
   color: black;
-  font: 700 6rem/7.2rem 'PT Serif', serif;
+  font: 700 5rem/7.2rem 'PT Serif', serif;
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading P {
@@ -664,11 +979,318 @@ main #talk-about-finance .your-payment-over .heading p {
 }
 
 @media (max-width: 768px) {
-  .banner-section .oval-image {
-    display: none;
+  main h3 {
+    font: 700 2.8rem/32px 'PT Serif', serif;
+  }
+  .mv-mb-20 {
+    margin-bottom: 20px;
+  }
+  .banner-section {
+    padding: 5rem 0 7.5rem 0;
+  }
+  .banner-section .content_wrapper .button-wrapper {
+    gap: 15px;
+  }
+  .banner-section .content_wrapper h1 {
+    font: 700 6rem/7.5rem 'PT Serif', serif;
+  }
+  .banner-section .content_wrapper .button-wrapper {
+    margin-top: 25px;
+  }
+  main #accepting-payments .over-services .over-inner-wrapper {
+    padding: 4rem;
+  }
+  main #accepting-payments {
+    padding: 33rem 0 7.5rem 0;
+  }
+  main #accepting-payments .services-wrappers:after {
+    width: 8rem;
+    height: 6.5rem;
+    top: 0;
+    left: -3%;
+  }
+  main #accepting-payments .services-wrappers {
+    margin-top: 5rem;
   }
   main #accepting-payments .services-wrappers .services-wrapper {
-    padding: 3rem 3rem;
+    padding: 3rem 4rem;
+  }
+  main
+#accepting-payments
+.services-wrappers
+.services-wrapper
+.services-content {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+    margin-top: 20px;
+  }
+  main
+#accepting-payments
+.services-wrappers
+.services-wrapper
+.services-content
+h5 {
+    font: 400 3.2rem/4.4rem 'PT Serif', serif;
+  }
+  main #accepting-payments .services-wrappers:before {
+    width: 9.5rem;
+    height: 7.3rem;
+    right: -4%;
+    bottom: -2%;
+    background-size: cover;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  main #accepting-payments .having-issues h3 {
+    margin-bottom: 25px;
+  }
+  main #thousands-sellers {
+    padding: 7.5rem 0;
+  }
+  main #thousands-sellers .title p {
+    margin-top: 2rem;
+  }
+  main #thousands-sellers .card-wrapper {
+    margin-top: 4rem;
+  }
+  main #another-money {
+    padding: 7.5rem 0;
+  }
+  main #another-money .content-wrapper {
+    margin-top: 6.5rem;
+  }
+  main #another-money .content-wrapper .title .title-bg-shape {
+    width: 150px;
+    top: -5%;
+    right: 15%;
+  }
+  main #another-money .content-wrapper .title h2 {
+    margin-bottom: 3.5rem;
+  }
+  main #another-money .content-wrapper .title p {
+    margin-bottom: 6rem;
+  }
+  #frequently-asked-questions .accordion {
+    margin-top: 6rem;
+  }
+  main #talk-about-finance .have-questions {
+    padding: 0 15px;
+    top: -20%;
+  }
+  main #talk-about-finance .have-questions .inner-wrapper:after {
+    content: '';
+    width: 12rem;
+    height: 10rem;
+    z-index: -1;
+  }
+  main #talk-about-finance .have-questions .inner-wrapper .border-right {
+    border-right: 0 !important;
+  }
+  main
+#talk-about-finance
+.have-questions
+.inner-wrapper
+.request-call-wrapper {
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+  main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper,
+  main
+#talk-about-finance
+.have-questions
+.inner-wrapper
+.have-questions-wrapper {
+    padding: 3rem 4rem;
+  }
+  main
+#talk-about-finance
+.have-questions
+.inner-wrapper
+.have-questions-wrapper
+.heading
+h2 {
+    font: 700 3rem/4.2rem 'PT Serif', serif;
+  }
+  main
+#talk-about-finance
+.have-questions
+.inner-wrapper
+.have-questions-wrapper
+.heading
+.main-title
+.title-bg-shape {
+    width: 40%;
+  }
+  main #frequently-asked-questions {
+    padding: 7.5rem 0 75.5rem 0;
+  }
+  main #frequently-asked-questions .title p {
+    margin-top: 4rem;
+  }
+  main #frequently-asked-questions .title .title-main .title-bg-shape {
+    width: 50%;
+  }
+  main
+#talk-about-finance
+.have-questions
+.inner-wrapper
+.request-call-wrapper
+form
+.form-group {
+    height: 45px;
+  }
+  main #talk-about-finance .your-payment-over .heading h3 {
+    font: 700 3.6rem/4.5rem 'PT Serif', serif;
+  }
+  main #talk-about-finance .your-payment-over {
+    width: 95% !important;
+    bottom: -6%;
+    text-align: center;
+  }
+  main #talk-about-finance .we-talk-main-wrapper .cards-wrapper {
+    margin-top: 5rem;
+  }
+  main #talk-about-finance .your-payment-over .heading p {
+    margin-bottom: 5.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .title h2 {
+    font: 700 5.2rem/7rem 'PT Serif', serif;
+  }
+  .title p {
+    font: 400 18px/24.44px 'Rubik', sans-serif;
+  }
+  .tab-mt-30 {
+    margin-top: 30px;
+  }
+  .banner-section {
+    padding: 20rem 0 13.5rem 0;
+  }
+  main #accepting-payments .over-services .over-inner-wrapper {
+    padding: 3rem;
+  }
+  main
+#accepting-payments
+.over-services
+.over-inner-wrapper
+.content-wrapper
+.over-wrapper-content
+h4
+span {
+    display: inline-block;
+  }
+  main
+#accepting-payments
+.services-wrappers
+.services-wrapper
+.services-content {
+    padding-left: 0;
+  }
+  main
+#accepting-payments
+.services-wrappers
+.services-wrapper
+.services-content
+h5 {
+    font: 400 3.2rem/4.4rem 'PT Serif', serif;
+  }
+  main
+#accepting-payments
+.services-wrappers
+.services-wrapper
+.services-content
+.bottom-content
+p {
+    font: 400 1.8rem/2.6rem 'Roboto', sans-serif;
+  }
+  main #accepting-payments .having-issues h3 {
+    font: 700 2.8rem/43.6px 'PT Serif', serif;
+    margin-bottom: 40px;
+  }
+  main #thousands-sellers .title P {
+    line-height: 3rem;
+  }
+  main #thousands-sellers,
+  main #another-money {
+    padding: 7.5rem 0;
+  }
+  main #thousands-sellers .title .title-bg-shape {
+    width: 55%;
+    top: -7%;
+    left: -6%;
+  }
+  main #thousands-sellers .card-wrapper {
+    margin-top: 7rem;
+  }
+  main #another-money .content-wrapper .title .title-bg-shape {
+    width: 35%;
+    top: -5%;
+  }
+  main #another-money .content-wrapper .title h2 {
+    margin-bottom: 5rem;
+  }
+  main #another-money .content-wrapper .title p {
+    margin-bottom: 5rem;
+  }
+  main #frequently-asked-questions {
+    padding-top: 7.5rem;
+  }
+  main #frequently-asked-questions .title .title-main .title-bg-shape {
+    width: 43%;
+  }
+  main #frequently-asked-questions .title p {
+    margin: 5rem 0 6rem 0;
+  }
+  main #frequently-asked-questions .accordion {
+    margin-top: 6rem;
+  }
+  main
+#talk-about-finance
+.have-questions
+.inner-wrapper
+.request-call-wrapper {
+    padding: 3.5rem 3.5rem;
+  }
+  main
+#talk-about-finance
+.have-questions
+.inner-wrapper
+.have-questions-wrapper
+.heading
+h2 {
+    font: 700 2.8rem/4.2rem 'PT Serif', serif;
+  }
+  main
+#talk-about-finance
+.have-questions
+.inner-wrapper
+.have-questions-wrapper
+.heading
+P {
+    font: 400 1.8rem/2.4rem 'Rubik', sans-serif;
+  }
+  main #talk-about-finance .your-payment-over .heading h3 {
+    font: 700 2.8rem/2.7rem 'PT Serif', serif;
+  }
+  main #talk-about-finance .we-talk-main-wrapper .cards-wrapper {
+    margin-top: 5rem;
+  }
+  main
+#talk-about-finance
+.we-talk-main-wrapper
+.cards-wrapper
+.card
+.card-body
+.card-title {
+    font: 700 2rem/2.6rem 'PT Serif', serif;
+  }
+  main #talk-about-finance .your-payment-over {
+    text-align: center;
+  }
+  main #talk-about-finance .your-payment-over .heading p {
+    margin-bottom: 5rem;
   }
 }
 
@@ -754,17 +1376,50 @@ footer .sing-up-media-links form button {
   font: 400 1.6rem 'Rubik', sans-serif;
 }
 
-footer .sing-up-media-links .media-links ul {
+footer .footer-bottom p {
+  font: 400 1.8rem/2.1rem 'Rubik', sans-serif;
+  color: #343434;
+}
+
+.media-links ul {
   gap: 20px;
 }
 
-footer .sing-up-media-links .media-links ul li a i {
+.media-links ul li a i {
   font-size: 1.8rem;
   color: black;
 }
 
-footer .footer-bottom p {
-  font: 400 1.8rem/2.1rem 'Rubik', sans-serif;
-  color: #343434;
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 40.6rem 0 7rem 0;
+    text-align: center;
+  }
+  footer .sing-up-media-links {
+    margin: 4rem 0;
+  }
+  footer .sing-up-media-links .media-links ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer {
+    text-align: center;
+  }
+  footer .footer-shape {
+    top: 19%;
+    right: 19%;
+  }
+  footer .sing-up-media-links {
+    margin: 4rem 0;
+  }
+  footer .sing-up-media-links .media-links ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
