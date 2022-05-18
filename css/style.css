@@ -3,14 +3,14 @@
 ::after,
 ::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   outline: none;
 }
 
 body {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 1.6rem;
 }
 
@@ -53,7 +53,7 @@ p {
 }
 
 .title h2 {
-  font: 700 6.2rem/7.5rem 'PT Serif', serif;
+  font: 700 6.2rem/7.5rem "PT Serif", serif;
   margin-bottom: 3rem;
   z-index: 1;
 }
@@ -64,17 +64,17 @@ p {
 }
 
 .title p {
-  font: 400 24px/28.44px 'Rubik', sans-serif;
+  font: 400 24px/28.44px "Rubik", sans-serif;
 }
 
 @media screen and (max-width: 768px) {
   .title h2 {
-    font: 700 4.2rem/4.5rem 'PT Serif', serif;
+    font: 700 4.2rem/4.5rem "PT Serif", serif;
     margin-bottom: 3rem;
     z-index: 1;
   }
   .title p {
-    font: 400 18px/20.44px 'Rubik', sans-serif;
+    font: 400 18px/20.44px "Rubik", sans-serif;
   }
 }
 
@@ -103,7 +103,7 @@ p {
   padding: 1.5rem 3.5rem;
   outline: none;
   border-radius: 6px;
-  font: 400 1.8rem/22.77px 'Rubik', sans-serif;
+  font: 400 1.8rem/22.77px "Rubik", sans-serif;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -124,7 +124,7 @@ header {
   z-index: 22;
 }
 
-header .navbar input[type='checkbox'],
+header .navbar input[type="checkbox"],
 header .navbar .hamburger-lines {
   display: none;
 }
@@ -155,7 +155,7 @@ header .header-topbar .navlinks {
 }
 
 header .header-topbar .navlinks li a {
-  font: 400 1.8rem/2.5px 'PT Serif', serif;
+  font: 400 1.8rem/2.5px "PT Serif", serif;
   color: black;
 }
 
@@ -164,7 +164,7 @@ header .header-topbar .navlinks li a:hover {
 }
 
 header .sidebar-content-mobileview a {
-  font: 400 1.8rem/3.3rem 'Rubik', sans-serif;
+  font: 400 1.8rem/3.3rem "Rubik", sans-serif;
   display: block;
   margin-bottom: 15px;
   color: black;
@@ -180,7 +180,7 @@ header .sidebar-content-mobileview .media-links-sidebar ul {
 }
 
 header .bottom-content-sidebar .follow-us-on h6 {
-  font: 400 1.8rem 'PT Serif', serif;
+  font: 400 1.8rem "PT Serif", serif;
 }
 
 header .bottom-content-sidebar .follow-us-on .media-links ul {
@@ -205,14 +205,14 @@ header .navbar {
 header .navbar-container {
   height: 64px;
   -webkit-box-shadow: 0px -10px 20px rgba(0, 54, 110, 0.057595);
-          box-shadow: 0px -10px 20px rgba(0, 54, 110, 0.057595);
+  box-shadow: 0px -10px 20px rgba(0, 54, 110, 0.057595);
   border-radius: 8px;
 }
 
 header .menu-items {
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,8 +220,8 @@ header .menu-items {
 
 header .logo {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
   font-size: 1.8rem;
 }
 
@@ -234,8 +234,8 @@ header button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header .navbar a {
@@ -270,7 +270,7 @@ header .navbar a:hover {
 }
 
 @media (max-width: 768px) {
-  header .navbar-container input[type='checkbox'],
+  header .navbar-container input[type="checkbox"],
   header .navbar-container .hamburger-lines {
     display: block;
   }
@@ -279,7 +279,7 @@ header .navbar a:hover {
     position: relative;
     height: 64px;
   }
-  header .navbar-container input[type='checkbox'] {
+  header .navbar-container input[type="checkbox"] {
     position: absolute;
     display: block;
     height: 32px;
@@ -303,14 +303,14 @@ header .navbar a:hover {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   header .navbar-container .hamburger-lines .line {
     display: block;
@@ -321,7 +321,7 @@ header .navbar a:hover {
   }
   header .navbar-container .hamburger-lines .line1 {
     -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
@@ -335,7 +335,7 @@ header .navbar a:hover {
   }
   header .navbar-container .hamburger-lines .line3 {
     -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
@@ -352,17 +352,17 @@ header .navbar a:hover {
     max-width: 300px;
     width: 70vw;
     -webkit-transform: translate(-150%);
-            transform: translate(-150%);
+    transform: translate(-150%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
@@ -387,27 +387,27 @@ header .navbar a:hover {
     left: 15px;
     font-size: 1.7rem;
   }
-  header .navbar-container input[type='checkbox']:checked ~ .menu-items {
+  header .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     width: 70vw;
   }
-  header .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line1 {
+  header .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
-  header .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line2 {
+  header .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
   }
-  header .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3 {
+  header .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 
 @media (max-width: 500px) {
-  header .navbar-container input[type='checkbox']:checked ~ .logo {
+  header .navbar-container input[type="checkbox"]:checked ~ .logo {
     display: none;
   }
 }
@@ -419,7 +419,7 @@ header .navbar a:hover {
 }
 
 .banner-section h3 {
-  font: 700 4.8rem/63.6px 'PT Serif', serif;
+  font: 700 4.8rem/63.6px "PT Serif", serif;
 }
 
 .banner-section .content_wrapper {
@@ -427,7 +427,7 @@ header .navbar a:hover {
 }
 
 .banner-section .content_wrapper::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -440,20 +440,20 @@ header .navbar a:hover {
 }
 
 .banner-section .content_wrapper h1 {
-  font: 700 9rem/10.5rem 'PT Serif', serif;
+  font: 700 9rem/10.5rem "PT Serif", serif;
   margin-bottom: 30px;
   z-index: 2;
 }
 
 .banner-section .content_wrapper p {
-  font: 400 2.4rem/3.3rem 'Rubik', sans-serif;
+  font: 400 2.4rem/3.3rem "Rubik", sans-serif;
 }
 
 .banner-section .content_wrapper .title-bg-shape {
   top: 54%;
   z-index: -1;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: -5%;
   width: 50%;
 }
@@ -469,7 +469,7 @@ header .navbar a:hover {
 }
 
 .banner-section .content_wrapper .rating-wrapper h5 {
-  font: 400 1.4rem/16.6px 'Roboto', sans-serif;
+  font: 400 1.4rem/16.6px "Roboto", sans-serif;
   mix-blend-mode: normal;
   color: black;
   opacity: 0.5;
@@ -480,7 +480,7 @@ header .navbar a:hover {
   margin-top: 5px;
   max-width: 100px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .banner-section .oval-image {
@@ -495,7 +495,7 @@ header .navbar a:hover {
 }
 
 main h3 {
-  font: 700 4.8rem/63.6px 'PT Serif', serif;
+  font: 700 4.8rem/63.6px "PT Serif", serif;
 }
 
 main #accepting-payments {
@@ -513,7 +513,7 @@ main #accepting-payments .over-services .over-inner-wrapper {
   padding: 5.7rem 5rem;
   border-radius: 10px;
   -webkit-box-shadow: 0px 50px 100px rgba(8, 15, 21, 0.0749392);
-          box-shadow: 0px 50px 100px rgba(8, 15, 21, 0.0749392);
+  box-shadow: 0px 50px 100px rgba(8, 15, 21, 0.0749392);
 }
 
 main #accepting-payments .over-services .over-inner-wrapper .content-wrapper .right-circle {
@@ -522,34 +522,35 @@ main #accepting-payments .over-services .over-inner-wrapper .content-wrapper .ri
 }
 
 main #accepting-payments .over-services .over-inner-wrapper .content-wrapper .over-wrapper-content h5 {
-  font: 400 1.5rem/1.8rem 'Roboto', sans-serif;
+  font: 400 1.5rem/1.8rem "Roboto", sans-serif;
   color: black;
   opacity: 0.26;
 }
 
 main #accepting-payments .over-services .over-inner-wrapper .content-wrapper .over-wrapper-content h4 {
-  font: 400 2.4rem/3rem 'Rubik', sans-serif;
+  font: 400 2.4rem/3rem "Rubik", sans-serif;
 }
 
 main #accepting-payments .title .title-bg-shape {
   top: -20%;
   right: 32%;
   -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
+  transform: rotate(8deg);
 }
 
 main #accepting-payments .services-wrappers {
   margin-top: 10rem;
 }
 
-main #accepting-payments .services-wrappers:after, main #accepting-payments .services-wrappers:before {
+main #accepting-payments .services-wrappers:after,
+main #accepting-payments .services-wrappers:before {
   position: absolute;
   z-index: -1;
   background-size: cover;
 }
 
 main #accepting-payments .services-wrappers:after {
-  content: '';
+  content: "";
   width: 5rem;
   height: 4.5rem;
   left: -2%;
@@ -558,7 +559,7 @@ main #accepting-payments .services-wrappers:after {
 }
 
 main #accepting-payments .services-wrappers:before {
-  content: '';
+  content: "";
   width: 15.5rem;
   height: 12.3rem;
   right: -7%;
@@ -580,16 +581,16 @@ main #accepting-payments .services-wrappers .services-wrapper {
 
 main #accepting-payments .services-wrappers .services-wrapper .services-content h6 {
   color: #ff3d3d;
-  font: 400 1.8rem/3rem 'Roboto', sans-serif;
+  font: 400 1.8rem/3rem "Roboto", sans-serif;
 }
 
 main #accepting-payments .services-wrappers .services-wrapper .services-content h5 {
-  font: 400 4.2rem/5.4rem 'PT Serif', serif;
+  font: 400 4.2rem/5.4rem "PT Serif", serif;
   color: black;
 }
 
 main #accepting-payments .services-wrappers .services-wrapper .services-content .bottom-content p {
-  font: 400 2.4rem/3.6rem 'Roboto', sans-serif;
+  font: 400 2.4rem/3.6rem "Roboto", sans-serif;
 }
 
 main #accepting-payments .services-wrappers .services-wrapper .services-content .bottom-content a img {
@@ -617,7 +618,7 @@ main #thousands-sellers .title .title-bg-shape {
   top: -15%;
   left: -4%;
   -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
 
 main #thousands-sellers .title span {
@@ -641,7 +642,7 @@ main #thousands-sellers .card-wrapper .card {
 
 main #thousands-sellers .card-wrapper .card:hover {
   -webkit-box-shadow: 0px 20px 80px rgba(8, 15, 21, 0.0529529);
-          box-shadow: 0px 20px 80px rgba(8, 15, 21, 0.0529529);
+  box-shadow: 0px 20px 80px rgba(8, 15, 21, 0.0529529);
 }
 
 main #thousands-sellers .card-wrapper .card i {
@@ -650,11 +651,11 @@ main #thousands-sellers .card-wrapper .card i {
 
 main #thousands-sellers .card-wrapper .card .card-title {
   margin-top: 2rem;
-  font: 700 2.8rem/4rem 'PT Serif', serif;
+  font: 700 2.8rem/4rem "PT Serif", serif;
 }
 
 main #thousands-sellers .card-wrapper .card .card-text {
-  font: 400 2rem/3.4rem 'Rubik', sans-serif;
+  font: 400 2rem/3.4rem "Rubik", sans-serif;
 }
 
 main #another-money {
@@ -673,7 +674,7 @@ main #another-money .content-wrapper .title .title-bg-shape {
   right: 13%;
   z-index: -1;
   -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
+  transform: rotate(8deg);
 }
 
 main #another-money .content-wrapper .title h2 {
@@ -718,7 +719,7 @@ main #frequently-asked-questions .accordion .accordion-item .accordion-button {
   padding: 3rem 0;
   color: black;
   border: 0;
-  font: 400 2.2rem 'Rubik', sans-serif;
+  font: 400 2.2rem "Rubik", sans-serif;
 }
 
 main #frequently-asked-questions .accordion .fas {
@@ -729,7 +730,7 @@ main #frequently-asked-questions .accordion .fas {
 
 main #frequently-asked-questions .accordion .collapsed .fas {
   -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 main #frequently-asked-questions .accordion button:focus {
@@ -749,7 +750,7 @@ main #talk-about-finance .have-questions {
   top: -24%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 2;
   padding: 0;
 }
@@ -759,12 +760,12 @@ main #talk-about-finance .have-questions .inner-wrapper {
   width: 100%;
   height: 100%;
   -webkit-box-shadow: 0px 30px 60px rgba(19, 24, 48, 0.0720283);
-          box-shadow: 0px 30px 60px rgba(19, 24, 48, 0.0720283);
+  box-shadow: 0px 30px 60px rgba(19, 24, 48, 0.0720283);
   border-radius: 15px;
 }
 
 main #talk-about-finance .have-questions .inner-wrapper:after {
-  content: '';
+  content: "";
   width: 15rem;
   height: 13rem;
   top: -10%;
@@ -781,13 +782,13 @@ main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper {
 
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper .heading h3 {
   color: #262626;
-  font: 700 3.2rem/4.2rem 'PT Serif', serif;
+  font: 700 3.2rem/4.2rem "PT Serif", serif;
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper .heading p {
   margin-top: 1rem;
   color: #787878;
-  font: 400 2rem/2.7rem 'PT Serif', serif;
+  font: 400 2rem/2.7rem "PT Serif", serif;
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form {
@@ -822,24 +823,45 @@ main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper fo
 
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group input,
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group select,
-main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group input::-webkit-input-placeholder {
-  font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+main
+  #talk-about-finance
+  .have-questions
+  .inner-wrapper
+  .request-call-wrapper
+  form
+  .form-group
+  input::-webkit-input-placeholder {
+  font: 400 1.6rem/1.9rem "Roboto", sans-serif;
   color: black;
   outline: none;
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group input,
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group select,
-main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group input:-ms-input-placeholder {
-  font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+main
+  #talk-about-finance
+  .have-questions
+  .inner-wrapper
+  .request-call-wrapper
+  form
+  .form-group
+  input:-ms-input-placeholder {
+  font: 400 1.6rem/1.9rem "Roboto", sans-serif;
   color: black;
   outline: none;
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group input,
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group select,
-main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group input::-ms-input-placeholder {
-  font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+main
+  #talk-about-finance
+  .have-questions
+  .inner-wrapper
+  .request-call-wrapper
+  form
+  .form-group
+  input::-ms-input-placeholder {
+  font: 400 1.6rem/1.9rem "Roboto", sans-serif;
   color: black;
   outline: none;
 }
@@ -847,7 +869,7 @@ main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper fo
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group input,
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group select,
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group input::placeholder {
-  font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+  font: 400 1.6rem/1.9rem "Roboto", sans-serif;
   color: black;
   outline: none;
 }
@@ -857,7 +879,7 @@ main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper fo
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .below-btn-content {
-  font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+  font: 400 1.6rem/1.9rem "Roboto", sans-serif;
   color: #727272;
 }
 
@@ -879,13 +901,13 @@ main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper 
 
 main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading h2 {
   color: black;
-  font: 700 5rem/7.2rem 'PT Serif', serif;
+  font: 700 5rem/7.2rem "PT Serif", serif;
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading P {
   margin-top: 4rem;
   color: #3e3e3e;
-  font: 400 2rem/3.4rem 'Rubik', sans-serif;
+  font: 400 2rem/3.4rem "Rubik", sans-serif;
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .feel-free {
@@ -893,12 +915,12 @@ main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper 
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .feel-free h6 {
-  font: 400 1.8rem 'Rubik', sans-serif;
+  font: 400 1.8rem "Rubik", sans-serif;
   color: #8b8b8b;
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .feel-free h5 {
-  font: 400 2.4rem/4.4rem 'Rubik', sans-serif;
+  font: 400 2.4rem/4.4rem "Rubik", sans-serif;
   color: black;
 }
 
@@ -921,11 +943,11 @@ main #talk-about-finance .we-talk-main-wrapper .title .main-title .title-bg-shap
   left: 19.5%;
   z-index: -1;
   -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
+  transform: rotate(2deg);
 }
 
 main #talk-about-finance .we-talk-main-wrapper .title h5 {
-  font: 400 2rem/2.3rem 'Roboto', sans-serif;
+  font: 400 2rem/2.3rem "Roboto", sans-serif;
   color: black;
   opacity: 0.3;
   margin-bottom: 25px;
@@ -952,40 +974,40 @@ main #talk-about-finance .we-talk-main-wrapper .cards-wrapper .card .card-body {
 }
 
 main #talk-about-finance .we-talk-main-wrapper .cards-wrapper .card .card-body .date {
-  font: 400 1.7rem/2rem 'Rubik', sans-serif;
+  font: 400 1.7rem/2rem "Rubik", sans-serif;
   color: #ff3d3d;
 }
 
 main #talk-about-finance .we-talk-main-wrapper .cards-wrapper .card .card-body .card-title {
   margin: 2rem 0 3rem 0;
   color: black;
-  font: 700 3.2rem/3.8rem 'PT Serif', serif;
+  font: 700 3.2rem/3.8rem "PT Serif", serif;
 }
 
 main #talk-about-finance .we-talk-main-wrapper .cards-wrapper .card .card-body a {
   color: black;
-  font: 400 1.8rem/2.5rem 'Rubik', sans-serif;
+  font: 400 1.8rem/2.5rem "Rubik", sans-serif;
 }
 
 main #talk-about-finance .your-payment-over {
   padding: 4.5rem 4rem;
   -webkit-box-shadow: 0px 40px 100px rgba(8, 15, 21, 0.0529529);
-          box-shadow: 0px 40px 100px rgba(8, 15, 21, 0.0529529);
+  box-shadow: 0px 40px 100px rgba(8, 15, 21, 0.0529529);
   border-radius: 10px;
   bottom: -6%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 2;
 }
 
 main #talk-about-finance .your-payment-over .heading h3 {
-  font: 700 4.8rem/3.7rem 'PT Serif', serif;
+  font: 700 4.8rem/3.7rem "PT Serif", serif;
 }
 
 main #talk-about-finance .your-payment-over .heading p {
   margin: 3rem 0 0 0;
-  font: 400 2rem/2.8rem 'Rubik', sans-serif;
+  font: 400 2rem/2.8rem "Rubik", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -996,7 +1018,7 @@ main #talk-about-finance .your-payment-over .heading p {
 
 @media (max-width: 768px) {
   main h3 {
-    font: 700 2.8rem/32px 'PT Serif', serif;
+    font: 700 2.8rem/32px "PT Serif", serif;
   }
   .mv-mb-20 {
     margin-bottom: 20px;
@@ -1008,7 +1030,7 @@ main #talk-about-finance .your-payment-over .heading p {
     gap: 15px;
   }
   .banner-section .content_wrapper h1 {
-    font: 700 6rem/7.5rem 'PT Serif', serif;
+    font: 700 6rem/7.5rem "PT Serif", serif;
   }
   .banner-section .content_wrapper .button-wrapper {
     margin-top: 25px;
@@ -1031,23 +1053,14 @@ main #talk-about-finance .your-payment-over .heading p {
   main #accepting-payments .services-wrappers .services-wrapper {
     padding: 3rem 4rem;
   }
-  main
-#accepting-payments
-.services-wrappers
-.services-wrapper
-.services-content {
+  main #accepting-payments .services-wrappers .services-wrapper .services-content {
     -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: start !important;
     margin-top: 20px;
   }
-  main
-#accepting-payments
-.services-wrappers
-.services-wrapper
-.services-content
-h5 {
-    font: 400 3.2rem/4.4rem 'PT Serif', serif;
+  main #accepting-payments .services-wrappers .services-wrapper .services-content h5 {
+    font: 400 3.2rem/4.4rem "PT Serif", serif;
   }
   main #accepting-payments .services-wrappers:before {
     width: 9.5rem;
@@ -1056,7 +1069,7 @@ h5 {
     bottom: -2%;
     background-size: cover;
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
   main #accepting-payments .having-issues h3 {
     margin-bottom: 25px;
@@ -1095,7 +1108,7 @@ h5 {
     top: -20%;
   }
   main #talk-about-finance .have-questions .inner-wrapper:after {
-    content: '';
+    content: "";
     width: 12rem;
     height: 10rem;
     z-index: -1;
@@ -1103,38 +1116,17 @@ h5 {
   main #talk-about-finance .have-questions .inner-wrapper .border-right {
     border-right: 0 !important;
   }
-  main
-#talk-about-finance
-.have-questions
-.inner-wrapper
-.request-call-wrapper {
+  main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper {
     border-bottom: 1px solid #dee2e6 !important;
   }
   main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper,
-  main
-#talk-about-finance
-.have-questions
-.inner-wrapper
-.have-questions-wrapper {
+  main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper {
     padding: 3rem 4rem;
   }
-  main
-#talk-about-finance
-.have-questions
-.inner-wrapper
-.have-questions-wrapper
-.heading
-h2 {
-    font: 700 3rem/4.2rem 'PT Serif', serif;
+  main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading h2 {
+    font: 700 3rem/4.2rem "PT Serif", serif;
   }
-  main
-#talk-about-finance
-.have-questions
-.inner-wrapper
-.have-questions-wrapper
-.heading
-.main-title
-.title-bg-shape {
+  main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading .main-title .title-bg-shape {
     width: 40%;
   }
   main #frequently-asked-questions {
@@ -1146,17 +1138,11 @@ h2 {
   main #frequently-asked-questions .title .title-main .title-bg-shape {
     width: 50%;
   }
-  main
-#talk-about-finance
-.have-questions
-.inner-wrapper
-.request-call-wrapper
-form
-.form-group {
+  main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group {
     height: 45px;
   }
   main #talk-about-finance .your-payment-over .heading h3 {
-    font: 700 3.6rem/4.5rem 'PT Serif', serif;
+    font: 700 3.6rem/4.5rem "PT Serif", serif;
   }
   main #talk-about-finance .your-payment-over {
     width: 95% !important;
@@ -1173,10 +1159,10 @@ form
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .title h2 {
-    font: 700 5.2rem/7rem 'PT Serif', serif;
+    font: 700 5.2rem/7rem "PT Serif", serif;
   }
   .title p {
-    font: 400 18px/24.44px 'Rubik', sans-serif;
+    font: 400 18px/24.44px "Rubik", sans-serif;
   }
   .tab-mt-30 {
     margin-top: 30px;
@@ -1187,42 +1173,20 @@ form
   main #accepting-payments .over-services .over-inner-wrapper {
     padding: 3rem;
   }
-  main
-#accepting-payments
-.over-services
-.over-inner-wrapper
-.content-wrapper
-.over-wrapper-content
-h4
-span {
+  main #accepting-payments .over-services .over-inner-wrapper .content-wrapper .over-wrapper-content h4 span {
     display: inline-block;
   }
-  main
-#accepting-payments
-.services-wrappers
-.services-wrapper
-.services-content {
+  main #accepting-payments .services-wrappers .services-wrapper .services-content {
     padding-left: 0;
   }
-  main
-#accepting-payments
-.services-wrappers
-.services-wrapper
-.services-content
-h5 {
-    font: 400 3.2rem/4.4rem 'PT Serif', serif;
+  main #accepting-payments .services-wrappers .services-wrapper .services-content h5 {
+    font: 400 3.2rem/4.4rem "PT Serif", serif;
   }
-  main
-#accepting-payments
-.services-wrappers
-.services-wrapper
-.services-content
-.bottom-content
-p {
-    font: 400 1.8rem/2.6rem 'Roboto', sans-serif;
+  main #accepting-payments .services-wrappers .services-wrapper .services-content .bottom-content p {
+    font: 400 1.8rem/2.6rem "Roboto", sans-serif;
   }
   main #accepting-payments .having-issues h3 {
-    font: 700 2.8rem/43.6px 'PT Serif', serif;
+    font: 700 2.8rem/43.6px "PT Serif", serif;
     margin-bottom: 40px;
   }
   main #thousands-sellers .title P {
@@ -1262,45 +1226,23 @@ p {
   main #frequently-asked-questions .accordion {
     margin-top: 6rem;
   }
-  main
-#talk-about-finance
-.have-questions
-.inner-wrapper
-.request-call-wrapper {
+  main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper {
     padding: 3.5rem 3.5rem;
   }
-  main
-#talk-about-finance
-.have-questions
-.inner-wrapper
-.have-questions-wrapper
-.heading
-h2 {
-    font: 700 2.8rem/4.2rem 'PT Serif', serif;
+  main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading h2 {
+    font: 700 2.8rem/4.2rem "PT Serif", serif;
   }
-  main
-#talk-about-finance
-.have-questions
-.inner-wrapper
-.have-questions-wrapper
-.heading
-P {
-    font: 400 1.8rem/2.4rem 'Rubik', sans-serif;
+  main #talk-about-finance .have-questions .inner-wrapper .have-questions-wrapper .heading P {
+    font: 400 1.8rem/2.4rem "Rubik", sans-serif;
   }
   main #talk-about-finance .your-payment-over .heading h3 {
-    font: 700 2.8rem/2.7rem 'PT Serif', serif;
+    font: 700 2.8rem/2.7rem "PT Serif", serif;
   }
   main #talk-about-finance .we-talk-main-wrapper .cards-wrapper {
     margin-top: 5rem;
   }
-  main
-#talk-about-finance
-.we-talk-main-wrapper
-.cards-wrapper
-.card
-.card-body
-.card-title {
-    font: 700 2rem/2.6rem 'PT Serif', serif;
+  main #talk-about-finance .we-talk-main-wrapper .cards-wrapper .card .card-body .card-title {
+    font: 700 2rem/2.6rem "PT Serif", serif;
   }
   main #talk-about-finance .your-payment-over {
     text-align: center;
@@ -1327,11 +1269,11 @@ footer .log-wrapper ul {
 
 footer .log-wrapper ul li a {
   color: black;
-  font: 400 2rem/2.4rem 'Rubik', sans-serif;
+  font: 400 2rem/2.4rem "Rubik", sans-serif;
 }
 
 footer .sing-up-media-links h4 {
-  font: 400 1.4rem/2.8rem 'Rubik', sans-serif;
+  font: 400 1.4rem/2.8rem "Rubik", sans-serif;
   color: #343434;
   opacity: 0.5;
   letter-spacing: 1.4px;
@@ -1347,39 +1289,40 @@ footer .sing-up-media-links form button {
 }
 
 footer .sing-up-media-links form input {
-  font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+  font: 400 1.6rem/1.9rem "Rubik", sans-serif;
   border: 2px solid #000000;
   border-radius: 5px;
 }
 
 footer .sing-up-media-links form input::-webkit-input-placeholder {
   color: #343434;
-  font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+  font: 400 1.6rem/1.9rem "Rubik", sans-serif;
   opacity: 0.45;
 }
 
 footer .sing-up-media-links form input:-ms-input-placeholder {
   color: #343434;
-  font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+  font: 400 1.6rem/1.9rem "Rubik", sans-serif;
   opacity: 0.45;
 }
 
 footer .sing-up-media-links form input::-ms-input-placeholder {
   color: #343434;
-  font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+  font: 400 1.6rem/1.9rem "Rubik", sans-serif;
   opacity: 0.45;
 }
 
 footer .sing-up-media-links form input::placeholder {
   color: #343434;
-  font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+  font: 400 1.6rem/1.9rem "Rubik", sans-serif;
   opacity: 0.45;
 }
 
-footer .sing-up-media-links form input:focus, footer .sing-up-media-links form input:active {
+footer .sing-up-media-links form input:focus,
+footer .sing-up-media-links form input:active {
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 2px solid #000000;
   border-radius: 5px;
 }
@@ -1389,11 +1332,11 @@ footer .sing-up-media-links form button {
   width: 13rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  font: 400 1.6rem 'Rubik', sans-serif;
+  font: 400 1.6rem "Rubik", sans-serif;
 }
 
 footer .footer-bottom p {
-  font: 400 1.8rem/2.1rem 'Rubik', sans-serif;
+  font: 400 1.8rem/2.1rem "Rubik", sans-serif;
   color: #343434;
 }
 
@@ -1416,8 +1359,8 @@ footer .footer-bottom p {
   }
   footer .sing-up-media-links .media-links ul {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -1434,8 +1377,8 @@ footer .footer-bottom p {
   }
   footer .sing-up-media-links .media-links ul {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
