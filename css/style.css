@@ -1171,7 +1171,7 @@ form
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .title h2 {
     font: 700 5.2rem/7rem 'PT Serif', serif;
   }
@@ -1307,6 +1307,16 @@ P {
   }
   main #talk-about-finance .your-payment-over .heading p {
     margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 992.5px) and (max-width: 1200px) {
+  main #accepting-payments .services-wrappers:before {
+    right: -4%;
+    width: 16rem;
+    height: 12rem;
+    -webkit-transform: rotate(84deg);
+            transform: rotate(84deg);
   }
 }
 

@@ -677,7 +677,7 @@ main {
     margin-bottom: 5.5rem;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .title h2 {
     font: 700 5.2rem/7rem 'PT Serif', serif;
   }
@@ -727,6 +727,7 @@ main {
     p {
     font: 400 1.8rem/2.6rem 'Roboto', sans-serif;
   }
+
   main #accepting-payments .having-issues h3 {
     font: 700 2.8rem/43.6px 'PT Serif', serif;
     margin-bottom: 40px;
@@ -813,5 +814,14 @@ main {
   }
   main #talk-about-finance .your-payment-over .heading p {
     margin-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 992.5px) and (max-width: 1200px) {
+  main #accepting-payments .services-wrappers:before {
+    right: -4%;
+    width: 16rem;
+    height: 12rem;
+    transform: rotate(84deg);
   }
 }
