@@ -15,22 +15,9 @@ $color_14: #343434;
 $font-family_1: "PT Serif", serif;
 $background-color_1: #0088a9;
 
-/*# sourceMappingURL=style.css.map */
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  outline: none;
-}
-&::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  outline: none;
-}
-&::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
@@ -135,14 +122,6 @@ header {
     filter: brightness(0);
   }
   .navbar-container {
-    .hamburger-lines {
-      position: unset;
-      width: 25px;
-      height: 16px;
-      .line {
-        height: 2px;
-      }
-    }
     height: 64px;
     -webkit-box-shadow: 0px -10px 20px rgba(0, 54, 110, 0.057595);
     box-shadow: 0px -10px 20px rgba(0, 54, 110, 0.057595);
@@ -273,12 +252,6 @@ header {
     }
   }
 }
-.log-wrapper {
-  img {
-    width: 200px;
-    filter: brightness(0);
-  }
-}
 main {
   #frequently-asked-questions {
     .accordion {
@@ -320,7 +293,7 @@ main {
         }
       }
     }
-    padding: 25rem 0 50.57rem 0;
+    padding: 10% 0 20%;
     .title {
       .title-main {
         .title-bg-shape {
@@ -335,7 +308,7 @@ main {
         font-size: 2rem;
         line-height: 3.6rem;
         margin-top: 10rem;
-        margin-bottom: 5.5rem;
+        // margin-bottom: 5.5rem;
       }
     }
   }
@@ -391,7 +364,7 @@ main {
         height: 4.5rem;
         left: -2%;
         top: 1%;
-        background: url("../images/icons/blue-services.svg") no-repeat;
+        background: url("/images/icons/blue-services.svg") no-repeat;
       }
       &:before {
         position: absolute;
@@ -402,7 +375,7 @@ main {
         height: 12.3rem;
         right: -7%;
         bottom: -5%;
-        background: url("../images/icons/green-service.svg") no-repeat;
+        background: url("/images/icons/green-service.svg") no-repeat;
       }
       .services-wrapper {
         margin-top: 4rem;
@@ -480,7 +453,7 @@ main {
     }
   }
   #another-money {
-    padding: 25.69rem 0;
+    padding: 8% 0;
     background: #c4eded;
     .content-wrapper {
       .title {
@@ -508,10 +481,10 @@ main {
     background: #fff3d4;
     position: relative;
     .have-questions {
-      top: -24%;
+      top: 10%;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       z-index: 2;
       padding: 0;
       .inner-wrapper {
@@ -529,7 +502,7 @@ main {
           left: -5%;
           position: absolute;
           z-index: -1;
-          background: url(../images/haveq-after.png) no-repeat;
+          background: url(/images/haveq-after.png) no-repeat;
           background-size: cover;
         }
         .request-call-wrapper {
@@ -667,7 +640,7 @@ main {
       }
     }
     .we-talk-main-wrapper {
-      padding: 35.6rem 0 20rem 0;
+      padding: 30% 0 15%;
       .title {
         .main-title {
           z-index: 2;
@@ -749,7 +722,7 @@ h2.accordion-header {
 }
 .banner-section {
   min-height: 100vh;
-  background: url("../images/banner-bg.png");
+  background: url("/images/banner-bg.png");
   padding: 20rem 0 20rem 0;
   h3 {
     font: 700 4.8rem/63.6px "PT Serif", serif;
@@ -764,7 +737,7 @@ h2.accordion-header {
       z-index: -1;
       left: 0;
       top: 0;
-      background: url("../images/banner-left-side-shapes.png");
+      background: url("/images/banner-left-side-shapes.png");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -812,20 +785,27 @@ h2.accordion-header {
   }
 }
 footer {
-  padding: 26.6rem 0 8rem 0;
-  .footer-shape {
-    width: 14.5rem;
-    height: 23.46rem;
-    top: 25%;
-    right: 37%;
-  }
+  padding: 10% 0 5%;
   .log-wrapper {
+    img {
+      width: 200px;
+      filter: brightness(0);
+    }
     ul {
       margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       li {
         a {
           color: $color_3;
           font: 400 2rem/2.4rem "Rubik", sans-serif;
+        }
+        .circle {
+          width: 5px;
+          height: 5px;
+          background: black;
+          border-radius: 50%;
         }
       }
     }
@@ -928,7 +908,7 @@ footer {
     white-space: nowrap;
   }
   footer {
-    padding: 40.6rem 0 7rem 0;
+    padding: 50% 0 10%;
     text-align: center;
     .sing-up-media-links {
       margin: 4rem 0;
@@ -938,6 +918,11 @@ footer {
           -ms-flex-pack: center;
           justify-content: center;
         }
+      }
+    }
+    .log-wrapper {
+      ul {
+        justify-content: center;
       }
     }
   }
@@ -989,9 +974,9 @@ footer {
       .hamburger-lines {
         display: block;
         display: block;
-        height: 23px;
-        width: 30px;
-        position: absolute;
+        position: unset;
+        width: 25px;
+        height: 16px;
         top: 20px;
         right: 20px;
         z-index: 2;
@@ -1010,7 +995,7 @@ footer {
         align-items: center;
         .line {
           display: block;
-          height: 3px;
+          height: 2px;
           width: 100%;
           border-radius: 10px;
           background: #000;
@@ -1171,7 +1156,7 @@ footer {
     #talk-about-finance {
       .have-questions {
         padding: 0 15px;
-        top: -20%;
+        top: -6%;
         .inner-wrapper {
           &:after {
             content: "";
@@ -1216,17 +1201,19 @@ footer {
           }
         }
         width: 95% !important;
-        bottom: -6%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
         text-align: center;
       }
       .we-talk-main-wrapper {
+        padding: 100% 0 55%;
         .cards-wrapper {
           margin-top: 5rem;
         }
       }
     }
     #frequently-asked-questions {
-      padding: 7.5rem 0 75.5rem 0;
+      padding: 15% 0 140% 0;
       .title {
         p {
           margin-top: 4rem;
@@ -1244,13 +1231,14 @@ footer {
   }
   .banner-section {
     padding: 5rem 0 7.5rem 0;
+    min-height: 90vh;
     .content_wrapper {
       .button-wrapper {
         gap: 15px;
         margin-top: 25px;
       }
       h1 {
-        font: 700 6rem/7.5rem "PT Serif", serif;
+        font: 700 4.2rem/4.5rem "PT Serif", serif;
       }
     }
   }
@@ -1298,6 +1286,15 @@ footer {
           }
         }
       }
+    }
+  }
+  .btn-web {
+    font: 400 1.6rem/22.77px "Rubik", sans-serif;
+  }
+  .splide {
+    img.single-wallet-slider {
+      width: 40vw;
+      height: 20vw;
     }
   }
 }
@@ -1472,10 +1469,6 @@ footer {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   footer {
     text-align: center;
-    .footer-shape {
-      top: 19%;
-      right: 19%;
-    }
     .sing-up-media-links {
       margin: 4rem 0;
       .media-links {
