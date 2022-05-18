@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="images/fav/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/images/fav/ms-icon-144x144.png" />
+    <meta name="msapplication-TileImage" content="images/fav/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <title>Payment Getway</title>
     <link
@@ -28,33 +28,20 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css"
+      integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      header img.logo-img {
-        width: 130px;
-        filter: brightness(0);
-      }
-      .log-wrapper img {
-        width: 200px;
-        filter: brightness(0);
-      }
-      header .navbar-container .hamburger-lines {
-        position: unset;
-        width: 25px;
-        height: 16px;
-      }
-      header .navbar-container .hamburger-lines .line {
-        height: 2px;
-      }
-      main #frequently-asked-questions .accordion p {
-        font-size: 14px;
-        margin-bottom: 3rem;
-      }
-      h2.accordion-header {
-        margin-bottom: 0;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
   <body>
     <header class="position-absolute w-100 t-0">
@@ -66,18 +53,76 @@
               <div class="media-links">
                 <ul class="d-flex mb-0 h-100 align-items-center">
                   <li>
-                    <a href="https://www.facebook.com/crypwaveofficial"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/crypwaveofficial">
+                      <svg
+                        class="icon"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="1715"
+                      >
+                        <path
+                          d="M767.428571 6.857143v150.857143H677.714286q-49.142857 0-66.285715 20.571428t-17.142857 61.714286v108h167.428572l-22.285715 169.142857H594.285714v433.714286H419.428571V517.142857H273.714286V348h145.714285V223.428571q0-106.285714 59.428572-164.857142T637.142857 0q84 0 130.285714 6.857143z"
+                          p-id="1716"
+                        ></path>
+                      </svg>
+                    </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/crypwave"><i class="fab fa-twitter"></i></a>
+                    <a href="https://twitter.com/crypwave">
+                      <svg
+                        class="icon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="2022"
+                      >
+                        <path
+                          d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4 35.4-21.1 62.3-54.4 75-94-32.7 19.5-69.7 33.8-108.2 41.2C765.4 194.6 721.1 174 672 174c-94.5 0-170.5 76.6-170.5 170.6 0 13.2 1.6 26.4 4.2 39.1-141.5-7.4-267.7-75-351.6-178.5-14.8 25.4-23.2 54.4-23.2 86.1 0 59.2 30.1 111.4 76 142.1-28-1.1-54.4-9-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4-14.3 3.7-29.6 5.8-44.9 5.8-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9-14.3 0-27.5-0.5-41.2-2.1C171.5 822 261.2 850 357.8 850 671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-0.5-22.2 33.2-24.3 62.3-54.4 85.5-88.2z"
+                          p-id="2023"
+                        ></path>
+                      </svg>
+                    </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/company/crypwave-decentralized"
-                      ><i class="fab fa-linkedin-in"></i
-                    ></a>
+                    <a href="https://www.linkedin.com/company/crypwave-decentralized">
+                      <svg
+                        class="icon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="2759"
+                      >
+                        <path
+                          d="M272.544 357.152l0 566.272-188.576 0 0-566.272 188.576 0zM284.544 182.272q0.576 41.728-28.864 69.728t-77.44 28l-1.152 0q-46.848 0-75.424-28t-28.576-69.728q0-42.272 29.44-70.016t76.864-27.712 76 27.712 29.152 70.016zM950.848 598.848l0 324.576-188 0 0-302.848q0-60-23.136-94.016t-72.288-34.016q-36 0-60.288 19.712t-36.288 48.864q-6.272 17.152-6.272 46.272l0 316-188 0q1.152-228 1.152-369.728t-0.576-169.152l-0.576-27.424 188 0 0 82.272-1.152 0q11.424-18.272 23.424-32t32.288-29.728 49.728-24.864 65.44-8.864q97.728 0 157.152 64.864t59.424 190.016z"
+                          p-id="2760"
+                        ></path>
+                      </svg>
+                    </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/crypwaveofficial/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/crypwaveofficial/">
+                      <svg
+                        class="icon"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        p-id="3362"
+                      >
+                        <path
+                          d="M520.533 273.067c40.534 0 78.934 10.666 115.2 32s64 49.066 83.2 83.2c21.334 36.266 32 74.666 32 115.2s-10.666 78.933-32 115.2c-21.333 36.266-49.066 64-83.2 83.2-36.266 21.333-74.666 32-115.2 32s-78.933-10.667-115.2-32c-36.266-21.334-64-49.067-83.2-83.2-21.333-36.267-32-74.667-32-115.2s10.667-78.934 32-115.2 49.067-64 83.2-83.2 74.667-32 115.2-32z m0 379.733c40.534 0 76.8-14.933 106.667-44.8 29.867-29.867 44.8-64 44.8-106.667s-14.933-76.8-44.8-106.666c-29.867-29.867-64-44.8-106.667-44.8s-76.8 14.933-106.666 44.8c-29.867 29.866-44.8 64-44.8 106.666S384 578.133 413.867 608c29.866 29.867 66.133 44.8 106.666 44.8z m294.4-388.267c-2.133 14.934-6.4 27.734-17.066 38.4s-21.334 14.934-36.267 14.934-27.733-4.267-38.4-14.934c-10.667-10.666-17.067-23.466-17.067-38.4s4.267-27.733 17.067-38.4c10.667-10.666 23.467-14.933 38.4-14.933s27.733 4.267 38.4 14.933c8.533 10.667 14.933 23.467 14.933 38.4zM966.4 317.867c2.133 36.266 2.133 100.266 2.133 185.6s0 149.333-2.133 187.733c-2.133 38.4-8.533 70.4-17.067 98.133-12.8 34.134-29.866 61.867-55.466 87.467s-53.334 42.667-87.467 55.467c-27.733 8.533-61.867 14.933-98.133 17.066S608 951.467 520.533 951.467s-149.333 0-187.733-2.134-70.4-8.533-98.133-19.2C200.533 919.467 172.8 902.4 147.2 876.8s-42.667-53.333-55.467-87.467C83.2 761.6 76.8 727.467 74.667 691.2c-2.134-38.4-2.134-100.267-2.134-187.733s0-149.334 2.134-187.734 8.533-70.4 17.066-98.133c12.8-34.133 29.867-61.867 55.467-87.467s53.333-42.666 87.467-55.466C262.4 66.133 296.533 59.733 332.8 57.6s100.267-2.133 187.733-2.133 149.334 0 187.734 2.133 70.4 8.533 98.133 17.067c34.133 12.8 61.867 29.866 87.467 55.466s42.666 53.334 55.466 87.467c8.534 27.733 14.934 61.867 17.067 100.267zM870.4 768c8.533-23.467 12.8-57.6 17.067-108.8 2.133-29.867 2.133-70.4 2.133-123.733v-64c0-55.467 0-96-2.133-123.734-2.134-51.2-8.534-87.466-17.067-108.8-14.933-40.533-44.8-70.4-85.333-85.333-21.334-8.533-57.6-12.8-108.8-14.933-29.867-2.134-70.4-2.134-123.734-2.134h-64c-53.333 0-93.866 0-123.733 2.134C315.733 140.8 279.467 147.2 256 153.6c-40.533 14.933-70.4 44.8-85.333 85.333-8.534 21.334-12.8 57.6-14.934 108.8-2.133 29.867-2.133 70.4-2.133 123.734v64c0 53.333 0 93.866 2.133 123.733 2.134 49.067 8.534 85.333 14.934 108.8 17.066 40.533 46.933 70.4 85.333 85.333 23.467 8.534 57.6 12.8 108.8 17.067 29.867 2.133 70.4 2.133 123.733 2.133h64c55.467 0 96 0 123.734-2.133 51.2-2.133 87.466-8.533 108.8-17.067 40.533-17.066 70.4-44.8 85.333-85.333z"
+                          p-id="3363"
+                        ></path>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -111,9 +156,22 @@
               <a href="mailto:support@crypwave.com">support@crypwave.com</a>
             </div>
             <div class="bottom-content-sidebar">
-              <a href="https://dashboard.crypwave.com/" class="btn-web btn-primary-web"
-                >Sign Up &nbsp;&nbsp;<i class="fas fa-arrow-right"></i
-              ></a>
+              <a href="https://dashboard.crypwave.com/" class="btn-web btn-primary-web d-flex align-items-center"
+                >Sign Up &nbsp;&nbsp;
+                <svg
+                  viewBox="64 64 896 896"
+                  focusable="false"
+                  data-icon="arrow-right"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"
+                  ></path>
+                </svg>
+              </a>
               <div class="follow-us-on mt-5">
                 <div class="row">
                   <div class="col-6">
@@ -157,14 +215,16 @@
                   <img src="./images/title-bg-shape.png" alt="Shape" />
                 </div>
               </h1>
-              <p>Integrate crypto payment gateway without any technical knowledge.</p>
+              <p>
+                CrypWave allows businesses to accept multi crypto payments seamlessly through its API driven technology.
+              </p>
               <div class="button-wrapper d-flex">
                 <a href="#" class="btn-web btn-primary-web">Book a Demo</a>
                 <a href="https://dashboard.crypwave.com/documentation" class="btn-web btn-black-border">
                   Read the developer docs
                 </a>
               </div>
-              <ul class="rating-wrapper d-flex justify-start align-items-center">
+              <ul class="rating-wrapper justify-start align-items-center d-none">
                 <li><h3>4.7</h3></li>
                 <li>
                   <h5>top rated on trustpilot</h5>
@@ -177,7 +237,7 @@
       </div>
       <!-- Oval Image -->
       <div class="oval-image position-absolute">
-        <img src="images/Oval.png" alt="oval img" />
+        <img src="images/mockup.png" alt="oval img" />
       </div>
     </div>
     <main>
@@ -222,7 +282,7 @@
                           </li>
                           <li>
                             <div class="over-wrapper-content ml-5">
-                              <h5 class="text-uppercase mb-3">code free setup</h5>
+                              <h5 class="text-uppercase mb-3">low fees</h5>
                               <h4 class="mb-0">1% transaction fee, lowest in Industry</h4>
                             </div>
                           </li>
@@ -241,7 +301,7 @@
                           <li>
                             <div class="over-wrapper-content ml-5">
                               <h5 class="text-uppercase mb-3">Global withdrawals</h5>
-                              <h4 class="mb-0">Instant transfer to crypto wallet</h4>
+                              <h4 class="mb-0">Instant transfer to any crypto wallet</h4>
                             </div>
                           </li>
                         </ul>
@@ -262,7 +322,7 @@
                   Accepting crypto should
                   <span class="dsk-display-none">not be hard</span>
                   <div class="title-bg-shape position-absolute">
-                    <img class="img-fluid" src="/images/title-bg-shape.png" alt="Shape" />
+                    <img class="img-fluid" src="images/title-bg-shape.png" alt="Shape" />
                   </div>
                 </h2>
                 <p>Acccept payment using payment links, quick checkout, API’s and payment buttons</p>
@@ -275,25 +335,29 @@
             <div class="row">
               <div class="col-md-12 m-auto">
                 <div class="services-wrapper bg-white">
-                  <div class="row">
+                  <div class="row align-items-center">
                     <div class="col-md-4">
                       <div class="service-img">
-                        <img class="img-fluid" src="./images/invoices.png" alt="Invoices Img" />
+                        <img
+                          class="img-fluid"
+                          src="https://d6xcmfyh68wv8.cloudfront.net/assets/paymentlinks/pl-reminders.svg"
+                          alt="Invoices Img"
+                        />
                       </div>
                     </div>
                     <div class="col-md-8">
                       <div class="services-content d-flex flex-column justify-content-between h-100">
                         <div class="top-content">
-                          <h6 class="text-uppercase">Invoices</h6>
-                          <h5>One click onvoice with full accounting setup</h5>
+                          <h6 class="text-uppercase">Payment Buttons</h6>
+                          <h5>2 lines of code to start accepting payments</h5>
                         </div>
                         <div class="bottom-content">
                           <p class="mb-5">
-                            Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu text will be here.
+                            Use our one line of code to create a payment button on your website/mobile app.
                           </p>
-                          <a href="#">
+                          <!-- <a href="#">
                             <img src="./images/icons/right-arrow.svg" alt="RightArrow" />
-                          </a>
+                          </a> -->
                         </div>
                       </div>
                     </div>
@@ -306,25 +370,32 @@
             <div class="row">
               <div class="col-md-12 m-auto">
                 <div class="services-wrapper bg-white">
-                  <div class="row">
+                  <div class="row align-items-center">
                     <div class="col-md-4">
                       <div class="service-img">
-                        <img class="img-fluid" src="./images/quick-checkout.png" alt="Quick checkout Img" />
+                        <img
+                          class="img-fluid"
+                          src="https://d6xcmfyh68wv8.cloudfront.net/assets/paymentpages/hero-main.png"
+                          alt="Quick checkout Img"
+                        />
                       </div>
                     </div>
                     <div class="col-md-8">
                       <div class="services-content d-flex flex-column justify-content-between h-100">
                         <div class="top-content">
-                          <h6 class="text-uppercase">quick checkout</h6>
-                          <h5>No website? No issues</h5>
+                          <h6 class="text-uppercase">Payment Links</h6>
+                          <h5>
+                            No website?<br />
+                            No issues
+                          </h5>
                         </div>
                         <div class="bottom-content">
                           <p class="mb-5">
-                            Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu text will be here.
+                            Create a payment links and share via an email, SMS etc. and get paid immediately.
                           </p>
-                          <a href="#">
+                          <!-- <a href="#">
                             <img src="./images/icons/right-arrow.svg" alt="RightArrow" />
-                          </a>
+                          </a> -->
                         </div>
                       </div>
                     </div>
@@ -337,28 +408,30 @@
             <div class="row">
               <div class="col-md-12 m-auto">
                 <div class="services-wrapper bg-white">
-                  <div class="row">
+                  <div class="row align-items-center">
                     <div class="col-md-4">
                       <div class="service-img">
-                        <img class="img-fluid" src="./images/no-commission.png" alt="No Comission Img" />
+                        <img
+                          class="img-fluid"
+                          src="https://d6xcmfyh68wv8.cloudfront.net/assets/pricing/enterprise.svg"
+                          alt="No Comission Img"
+                        />
                       </div>
                     </div>
                     <div class="col-md-8">
                       <div class="services-content d-flex flex-column justify-content-between h-100">
                         <div class="top-content">
-                          <h6 class="text-uppercase">no-nonsense comission</h6>
+                          <h6 class="text-uppercase">no-nonsense commission</h6>
                           <h5>
                             Just pay 1% of
                             <span class="dsk-display-none">transaction amount</span>
                           </h5>
                         </div>
                         <div class="bottom-content">
-                          <p class="mb-5">
-                            Lorem ipsum dol amet, consecte adipisicing elit sed do. some dsu text will be here.
-                          </p>
-                          <a href="#">
+                          <p class="mb-5">Save up to 80% on fees when settling in your preferred crypto wallet.</p>
+                          <!-- <a href="#">
                             <img src="./images/icons/right-arrow.svg" alt="RightArrow" />
-                          </a>
+                          </a> -->
                         </div>
                       </div>
                     </div>
@@ -381,9 +454,9 @@
           <div class="row align-items-center">
             <div class="col-md-7">
               <div class="title position-relative">
-                <h2 class="mb-0"><span>20000+</span> trusted by thousands of sellers</h2>
+                <h2 class="mb-0"><span>$1.5T+</span> daily crypto transaction value</h2>
                 <div class="title-bg-shape position-absolute">
-                  <img class="img-fluid" src="/images/title-bg-shape.png" alt="Shape" />
+                  <img class="img-fluid" src="images/title-bg-shape.png" alt="Shape" />
                 </div>
               </div>
             </div>
@@ -395,30 +468,74 @@
           </div>
           <div class="card-wrapper">
             <div class="row">
-              <div class="col-lg-4 mv-mb-20">
+              <div class="col-lg-4 mb-5">
                 <div class="card w-100">
                   <div class="card-body">
-                    <i class="fas fa-credit-card"></i>
-                    <h5 class="card-title">Fastest growing gateway</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, debitis!</p>
+                    <img src="images/icons/easy-installation.png" />
+                    <h5 class="card-title">Easy Setup</h5>
+                    <p class="card-text">
+                      Use our one line of code to create a payment button on your website/mobile app. Start accepting
+                      payments in less than 5 minutes
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 mv-mb-20 tab-mt-30">
+              <div class="col-lg-4 mb-5">
                 <div class="card w-100">
                   <div class="card-body">
-                    <i class="fas fa-credit-card"></i>
-                    <h5 class="card-title">Your personal success manager</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, debitis!</p>
+                    <img src="images/icons/secure-payment.png" />
+                    <h5 class="card-title">Secure Gateway</h5>
+                    <p class="card-text">
+                      Generate a dynamic single use wallet for each transaction that acts as a guarantor between the
+                      customer and the merchant
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 tab-mt-30">
+              <div class="col-lg-4 mb-5">
                 <div class="card w-100">
                   <div class="card-body">
-                    <i class="fas fa-credit-card"></i>
-                    <h5 class="card-title">Hassel free integration</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, debitis!</p>
+                    <img src="images/icons/payment-link.png" />
+                    <h5 class="card-title">Payment Links</h5>
+                    <p class="card-text">
+                      Create a payment link within 30 seconds and share via an email, SMS, messenger, chatbot etc. and
+                      get paid immediately
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-5">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <img src="images/icons/api.png" />
+                    <h5 class="card-title">API Driven</h5>
+                    <p class="card-text">
+                      Build your business for scale with our complete API-driven automation that requires zero manual
+                      intervention
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-5">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <img src="images/icons/interactions.png" />
+                    <h5 class="card-title">Interactive Dashboard</h5>
+                    <p class="card-text">
+                      Make better business decisions using insights from the real-time data and reports available on the
+                      dashboard.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-5">
+                <div class="card w-100">
+                  <div class="card-body">
+                    <img src="images/icons/handshake.png" />
+                    <h5 class="card-title">Quick Settlement</h5>
+                    <p class="card-text">
+                      Settle your customer payments within 10 seconds as soon as your account is activated
+                    </p>
                   </div>
                 </div>
               </div>
@@ -437,17 +554,17 @@
             <div class="col-lg-6 tab-mt-30">
               <div class="content-wrapper">
                 <div class="title position-relative">
-                  <h2>Another money heading goes here</h2>
+                  <h2>The world is moving to crypto</h2>
                   <div class="title-bg-shape position-absolute">
-                    <img class="img-fluid" src="/images/title-bg-shape.png" alt="Shape" />
+                    <img class="img-fluid" src="images/title-bg-shape.png" alt="Shape" />
                   </div>
                   <p>
-                    Ask CDCR San Quintin State Prison 2008. We installed Purex dispensers throughout the prison to
-                    combat diseases…and it was a Roaring Success (as in Roaring Drunk) I mean we had Long lines of
-                    prisoners fist fighting to use them.
+                    According to Chainalysis — the number of cryptocurrency transactions related to illicit activities
+                    fell in 2020 (the latest report) to 0.34% of all cryptocurrency transactions. Out of this small
+                    number of transactions, 54% consisted of cryptocurrency scams
                   </p>
                 </div>
-                <a href="#" class="btn-web btn-primary-web">Sign up now</a>
+                <a href="https://dashboard.crypwave.com/" class="btn-web btn-primary-web">Sign up now</a>
               </div>
             </div>
           </div>
@@ -467,7 +584,7 @@
                       questions
                     </h2>
                     <div class="title-bg-shape position-absolute">
-                      <img class="img-fluid" src="/images/frequently-asked.png" alt="Shape" />
+                      <img class="img-fluid" src="images/frequently-asked.png" alt="Shape" />
                     </div>
                   </div>
                   <p>
@@ -588,14 +705,13 @@
                       </div>
                       <form action="#">
                         <div class="form-group mb-5 position-relative">
-                          <label for="exampleInputEmail1" class="position-absolute mb-0 bg-white">Product</label>
+                          <label for="exampleInputEmail1" class="position-absolute mb-0 bg-white">Subject</label>
                           <select type="text" class="form-control form-control-lg w-100 h-100" id="exampleInputEmail1">
-                            <option value="invoices">Invoices</option>
-                            <option value="invoices">Invoices</option>
-                            <option value="invoices">Invoices</option>
-                            <option value="invoices">Invoices</option>
-                            <option value="invoices">Invoices</option>
-                            <option value="invoices">Invoices</option>
+                            <option value="invoices">Demo</option>
+                            <option value="invoices">General</option>
+                            <option value="invoices">Integration</option>
+                            <option value="invoices">Feedback</option>
+                            <option value="invoices">Report</option>
                           </select>
                         </div>
                         <div class="form-group mb-5 position-relative">
@@ -609,7 +725,7 @@
                         </div>
                         <button type="submit" class="btn-web mb-5 btn-primary-web w-100 height-sm">CALL ME</button>
                         <span class="below-btn-content text-center d-block"
-                          >Add anything here to make it look good.</span
+                          >By filling this form you accept our <a href="">Terms & Conditions.</a></span
                         >
                       </form>
                     </div>
@@ -625,13 +741,12 @@
                             your mind?
                           </h2>
                           <div class="title-bg-shape position-absolute">
-                            <img class="img-fluid" src="/images/frequently-asked.png" alt="Shape" />
+                            <img class="img-fluid" src="images/frequently-asked.png" alt="Shape" />
                           </div>
                         </div>
 
                         <p>
-                          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                          consequat.
+                          Support is just a few taps away. Read our <a href="">developer docs</a> or send us an email.
                         </p>
                       </div>
                       <div class="feel-free">
@@ -652,12 +767,12 @@
             <div class="row">
               <div class="col-12">
                 <div class="title text-center">
-                  <h5 class="text-uppercase">News & Updates</h5>
+                  <!-- <h5 class="text-uppercase">We Support all Major Crypto Wallets</h5> -->
                   <div class="main-title position-relative">
                     <div class="main-title position-relative">
-                      <h2 class="mb-0">We talk about finance</h2>
+                      <h2 class="mb-0">We support all major crypto wallets</h2>
                       <div class="title-bg-shape position-absolute">
-                        <img class="img-fluid" src="/images/wetalk-shape.png" alt="Shape" />
+                        <img style="height: 100px" class="img-fluid" src="images/wetalk-shape.png" alt="Shape" />
                       </div>
                     </div>
                   </div>
@@ -667,7 +782,28 @@
             <div class="cards-wrapper">
               <div class="row">
                 <div class="col-12">
-                  <div class="card-deck">
+                  <div class="splide" role="group" aria-label="">
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide">
+                          <img class="single-wallet-slider" src="images/wallets/coinbase.png" />
+                        </li>
+                        <li class="splide__slide">
+                          <img class="single-wallet-slider" src="images/wallets/metamask.png" />
+                        </li>
+                        <li class="splide__slide">
+                          <img class="single-wallet-slider" src="images/wallets/walletconnect.png" />
+                        </li>
+                        <li class="splide__slide">
+                          <img class="single-wallet-slider" src="images/wallets/binancechain.png" />
+                        </li>
+                        <li class="splide__slide">
+                          <img class="single-wallet-slider" src="images/wallets/binancepay.png" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-deck d-none">
                     <div class="card border-0">
                       <img src="./images/quick-checkout.png" class="card-img-top" alt="..." />
                       <div class="card-body">
@@ -704,7 +840,7 @@
             <div class="col-lg-9">
               <div class="heading">
                 <h3>Your payment is just a click away</h3>
-                <p>Ut vel sapien molestie, accumsan dui eu, imperdiet nulla.</p>
+                <p>Join the thousands of businesses. It's free to sign up.</p>
               </div>
             </div>
             <div class="col-lg-3">
@@ -717,18 +853,16 @@
       <!-- We talk about finance Section End -->
     </main>
     <footer class="bg-white position-relative">
-      <div class="footer-shape position-absolute">
-        <img class="img-fluid" src="./images/footer-shape.png" alt="Shape" />
-      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-xl-8">
             <div class="log-wrapper">
               <img class="img-fluid" src="images/logo/logo.png" alt="Logo" />
               <ul>
-                <li class="mb-4">
+                <li>
                   <a href="#">Terms & Conditions</a>
                 </li>
+                <li class="ml-4 mr-4"><div class="circle"></div></li>
                 <li>
                   <a href="#">Privacy Policy</a>
                 </li>
@@ -742,7 +876,7 @@
                 <div class="form-group w-100 mb-0">
                   <input type="email" class="form-control" placeholder="Email address" required />
                 </div>
-                <button type="submit" class="btn-primary-web btn-web">Subscirbe</button>
+                <button type="submit" class="btn-primary-web btn-web">Subscribe</button>
               </form>
               <div class="media-links mt-5">
                 <ul class="d-flex">
@@ -775,9 +909,37 @@
       </div>
     </footer>
     <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"
+      integrity="sha256-esNVkEwsSpRc+USDUy7gWsyTZprX+CtOFMUgVq9JYnE="
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const splide = new Splide(".splide", {
+          pagination: false,
+          arrows: false,
+          type: "loop",
+          perPage: 4,
+          perMove: 1,
+          autoplay: true,
+          speed: 25000,
+          interval: 1,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+          breakpoints: {
+            640: {
+              perPage: 2,
+            },
+          },
+        });
+
+        splide.mount();
+      });
+    </script>
   </body>
 </html>

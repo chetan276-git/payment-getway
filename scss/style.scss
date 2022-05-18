@@ -81,7 +81,7 @@ p {
     z-index: 1;
   }
   .title-bg-shape {
-    width: 28%;
+    width: 21%;
     z-index: -1;
   }
   p {
@@ -146,7 +146,7 @@ header {
     }
   }
   .btn-web {
-    padding: 1rem 3.5rem;
+    padding: 1.3rem 3.5rem;
     text-align: center;
   }
   .btn-primary-web {
@@ -182,6 +182,11 @@ header {
     .media-links-sidebar {
       ul {
         gap: 5px !important;
+        li {
+          a {
+            display: flex;
+          }
+        }
       }
     }
   }
@@ -347,8 +352,8 @@ main {
     }
     .title {
       .title-bg-shape {
-        top: -20%;
-        right: 32%;
+        top: -6%;
+        right: 35%;
         -webkit-transform: rotate(8deg);
         transform: rotate(8deg);
       }
@@ -415,8 +420,8 @@ main {
     .title {
       z-index: 1;
       .title-bg-shape {
-        width: 40%;
-        top: -15%;
+        width: 41%;
+        top: -17%;
         left: -4%;
         -webkit-transform: rotate(-2deg);
         transform: rotate(-2deg);
@@ -432,19 +437,19 @@ main {
     .card-wrapper {
       margin-top: 12rem;
       .card {
-        padding: 4.5rem 3.5rem;
+        padding: 20px;
         -webkit-transition: 0.6s;
         transition: 0.6s;
         &:hover {
           -webkit-box-shadow: 0px 20px 80px rgba(8, 15, 21, 0.0529529);
           box-shadow: 0px 20px 80px rgba(8, 15, 21, 0.0529529);
         }
-        i {
-          font-size: 4rem;
+        img {
+          width: 75px;
         }
         .card-title {
           margin-top: 2rem;
-          font: 700 2.8rem/4rem "PT Serif", serif;
+          font: 700 2.5rem/4rem "PT Serif", serif;
         }
         .card-text {
           font: 400 2rem/3.4rem "Rubik", sans-serif;
@@ -459,10 +464,10 @@ main {
       .title {
         z-index: 1;
         .title-bg-shape {
-          width: 45%;
+          width: 44%;
           height: 100%;
-          top: -3%;
-          right: 13%;
+          top: 15%;
+          right: 5%;
           z-index: -1;
           -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
@@ -502,7 +507,7 @@ main {
           left: -5%;
           position: absolute;
           z-index: -1;
-          background: url(/images/haveq-after.png) no-repeat;
+          background: url("/images/haveq-after.png") no-repeat;
           background-size: cover;
         }
         .request-call-wrapper {
@@ -646,10 +651,9 @@ main {
           z-index: 2;
           z-index: 1;
           .title-bg-shape {
-            width: 11%;
-            height: 100%;
-            top: -2%;
-            left: 19.5%;
+            width: 24%;
+            top: -22%;
+            left: 10.5%;
             z-index: -1;
             -webkit-transform: rotate(2deg);
             transform: rotate(2deg);
