@@ -266,9 +266,18 @@ main {
 
     .accordion {
       .accordion-item {
+        &:not(:last-child) {
+          border-top: 2px solid #000;
+          border-bottom: 0 !important;
+        }
+        &:last-child {
+          border-top: 2px solid #000;
+          border-bottom: 2px solid #000;
+        }
         .accordion-button {
           padding: 3rem 0;
           color: $black-clr;
+          border: 0;
           font: 400 2.2rem 'Rubik', sans-serif;
         }
       }
@@ -352,7 +361,11 @@ main {
               select {
                 border: 1.5px solid #d7d7d7;
                 border-radius: 5px;
-                padding-left: 20px;
+                padding: 0 20px !important;
+              }
+              select::before {
+                color: red !important;
+                background: green !important;
               }
               input,
               select,

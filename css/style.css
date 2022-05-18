@@ -704,9 +704,20 @@ main #frequently-asked-questions .title p {
   margin-bottom: 5.5rem;
 }
 
+main #frequently-asked-questions .accordion .accordion-item:not(:last-child) {
+  border-top: 2px solid #000;
+  border-bottom: 0 !important;
+}
+
+main #frequently-asked-questions .accordion .accordion-item:last-child {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
 main #frequently-asked-questions .accordion .accordion-item .accordion-button {
   padding: 3rem 0;
   color: black;
+  border: 0;
   font: 400 2.2rem 'Rubik', sans-serif;
 }
 
@@ -801,7 +812,12 @@ main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper fo
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group select {
   border: 1.5px solid #d7d7d7;
   border-radius: 5px;
-  padding-left: 20px;
+  padding: 0 20px !important;
+}
+
+main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group select::before {
+  color: red !important;
+  background: green !important;
 }
 
 main #talk-about-finance .have-questions .inner-wrapper .request-call-wrapper form .form-group input,
