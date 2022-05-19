@@ -11,7 +11,11 @@
     <link rel="mask-icon" href="/images/fav/safari-pinned-tab.svg" color="#3483d6" />
     <meta name="msapplication-TileColor" content="#3483d6" />
     <meta name="theme-color" content="#3483d6" />
-    <title>Payment Getway</title>
+    <title>CrypWave - All in one crypto payment gateway</title>
+    <meta
+      name="description"
+      content="CrypWave allows businesses to accept crypto payments seamlessly through its API driven technology."
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -162,8 +166,8 @@
               </h1>
               <p>CrypWave allows businesses to accept crypto payments seamlessly through its API driven technology.</p>
               <div class="button-wrapper d-flex">
-                <a href="#" class="btn-web btn-primary-web">Book a Demo</a>
-                <a href="https://dashboard.crypwave.com/documentation" class="btn-web btn-black-border">
+                <a href="#" target="_blank" class="btn-web btn-primary-web">Book a Demo</a>
+                <a target="_blank" href="https://dashboard.crypwave.com/documentation" class="btn-web btn-black-border">
                   Read the developer docs
                 </a>
               </div>
@@ -650,31 +654,35 @@
                         <h3>Request call back</h3>
                         <p>Morbi non quam nec dui luctus rutrum.</p>
                       </div>
-                      <form action="#">
+                      <form id="callBackForm" onsubmit="callBack(event)">
                         <div class="form-group mb-5 position-relative">
-                          <label for="exampleInputEmail1" class="position-absolute mb-0 bg-white">Subject</label>
-                          <select type="text" class="form-control form-control-lg w-100 h-100" id="exampleInputEmail1">
-                            <option value="invoices">Demo</option>
-                            <option value="invoices">General</option>
-                            <option value="invoices">Integration</option>
-                            <option value="invoices">Feedback</option>
-                            <option value="invoices">Report</option>
+                          <label for="callBackFor" class="position-absolute mb-0 bg-white">Subject</label>
+                          <select type="text" class="form-control form-control-lg w-100 h-100" id="callBackFor">
+                            <option selected value="Demo">Demo</option>
+                            <option value="General">General</option>
+                            <option value="Integration">Integration</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Report">Report</option>
                           </select>
                         </div>
                         <div class="form-group mb-5 position-relative">
-                          <label for="exampleInputEmail1" class="position-absolute mb-0 bg-white">Email</label>
+                          <label for="callBackEmail" class="position-absolute mb-0 bg-white">Email</label>
                           <input
                             type="email"
+                            required
+                            autocomplete="email"
                             class="form-control form-control-lg w-100 h-100"
                             placeholder="random@example.com"
-                            id="exampleInputEmail1"
+                            id="callBackEmail"
                           />
                         </div>
-                        <button type="submit" class="btn-web mb-5 btn-primary-web w-100 height-sm">CALL ME</button>
-                        <span class="below-btn-content text-center d-block"
-                          >By filling this form you accept our <a href="">Terms & Conditions.</a></span
-                        >
+                        <button type="submit" class="btn-web mb-3 btn-primary-web w-100 height-sm">CALL ME</button>
                       </form>
+                      <div id="callBackAlert" class="form-alert d-none"></div>
+                      <span class="below-btn-content text-center d-block pt-3"
+                        >By filling this form you accept our
+                        <a href="terms-and-conditions">Terms & Conditions.</a></span
+                      >
                     </div>
                     <!-- Request call back Wrapper End -->
                   </div>
@@ -694,7 +702,7 @@
 
                         <p>
                           Support is just a few taps away. Read our
-                          <a href="">developer docs</a> or send us an email.
+                          <a href="https://dashboard.crypwave.com/documentation">developer docs</a> or send us an email.
                         </p>
                       </div>
                       <div class="feel-free">
@@ -823,12 +831,20 @@
           <div class="col-lg-7 m-auto col-xl-4">
             <div class="sing-up-media-links">
               <h4>SIGN UP FOR NEWSLETTER</h4>
-              <form action="#" class="d-flex">
+              <form id="newsletterform" onsubmit="newsletter(event)" class="d-flex">
                 <div class="form-group w-100 mb-0">
-                  <input type="email" class="form-control" placeholder="Email address" required />
+                  <input
+                    autocomplete="email"
+                    id="newsletteremail"
+                    type="email"
+                    class="form-control"
+                    placeholder="Email address"
+                    required
+                  />
                 </div>
                 <button type="submit" class="btn-primary-web btn-web">Subscribe</button>
               </form>
+              <div id="newsletterAlert" class="form-alert d-none"></div>
               <div class="media-links mt-5">
                 <ul class="d-flex">
                   <li>
@@ -909,6 +925,64 @@
 
         splide.mount();
       });
+    </script>
+    <script>
+      async function newsletter(e) {
+        e.preventDefault();
+        try {
+          const options = {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email: document.getElementById("newsletteremail").value,
+            }),
+          };
+          let res = await fetch("https://api.crypwave.com/api/newsletter-subscription", options);
+          res = await res.json();
+          if (!res.status) throw new Error();
+          document.querySelector("#callBackAlert").classList.remove("danger");
+          document.querySelector("#newsletterAlert").classList.remove("d-none");
+          document.querySelector("#newsletterAlert").classList.add("success");
+          document.querySelector("#newsletterAlert").innerHTML = "Thank you for subscribing to our newsletter.";
+          document.getElementById("newsletterform").remove();
+        } catch (error) {
+          document.querySelector("#callBackAlert").classList.remove("success");
+          document.querySelector("#newsletterAlert").classList.remove("d-none");
+          document.querySelector("#newsletterAlert").classList.add("danger");
+          document.querySelector("#newsletterAlert").innerHTML = "Something went wrong. Please try again later.";
+        }
+      }
+      async function callBack(e) {
+        e.preventDefault();
+        try {
+          const options = {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email: document.getElementById("callBackEmail").value,
+              subject: document.getElementById("callBackFor").value,
+            }),
+          };
+          let res = await fetch("https://api.crypwave.com/api/call-back", options);
+          res = await res.json();
+          if (!res.status) throw new Error();
+          document.querySelector("#callBackAlert").classList.remove("danger");
+          document.querySelector("#callBackAlert").classList.remove("d-none");
+          document.querySelector("#callBackAlert").classList.add("success");
+          document.querySelector("#callBackAlert").innerHTML =
+            "We have recieved you submission. Our team will reach out to you.";
+          document.getElementById("callBackForm").remove();
+        } catch (error) {
+          document.querySelector("#callBackAlert").classList.remove("success");
+          document.querySelector("#callBackAlert").classList.remove("d-none");
+          document.querySelector("#callBackAlert").classList.add("danger");
+          document.querySelector("#callBackAlert").innerHTML = "Something went wrong. Please try again later.";
+        }
+      }
     </script>
   </body>
 </html>

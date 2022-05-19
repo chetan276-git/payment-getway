@@ -18,12 +18,13 @@ $background-color_1: #0088a9;
 
 *,
 *::after,
-*::before {
+*::before,
+*:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: none;
+  outline: none !important;
 }
 body {
   font-family: $font-family_1;
@@ -598,10 +599,6 @@ main {
             .btn-web {
               height: 5.2rem;
             }
-            .below-btn-content {
-              font: 400 1.6rem/1.9rem "Roboto", sans-serif;
-              color: $color_11;
-            }
           }
         }
         .have-questions-wrapper {
@@ -713,6 +710,10 @@ main {
       }
     }
   }
+}
+.below-btn-content {
+  font: 400 1.6rem/1.9rem "Roboto", sans-serif;
+  color: $color_11;
 }
 h2.accordion-header {
   margin-bottom: 0;
@@ -904,6 +905,24 @@ footer {
     }
   }
 }
+.form-alert {
+  color: white;
+  display: block;
+  box-shadow: 0px 40px 100px rgba(8, 15, 21, 0.0529529);
+  border-radius: 3px;
+  &.success {
+    background: #4caf50;
+    font: 400 2rem/2.7rem "Roboto", sans-serif;
+    padding: 15px 10px;
+    margin: 20px 0;
+  }
+  &.danger {
+    background: #f44336;
+    font: 400 1.4rem/2rem "Roboto", sans-serif;
+    padding: 8px 10px;
+    margin: 10px 0;
+  }
+}
 @media screen and (max-width: 768px) {
   html {
     font-size: 50%;
@@ -1041,6 +1060,7 @@ footer {
       display: block;
       position: relative;
       height: 64px;
+      border-radius: 0px;
     }
     .navbar {
       .menu-items {
@@ -1245,8 +1265,8 @@ footer {
     margin-bottom: 20px;
   }
   .banner-section {
-    padding: 5rem 0 7.5rem 0;
-    min-height: 90vh;
+    padding: 100px 15px 140px;
+    min-height: unset;
     .content_wrapper {
       .button-wrapper {
         gap: 15px;
