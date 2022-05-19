@@ -13,7 +13,7 @@ $color_12: #3e3e3e;
 $color_13: #8b8b8b;
 $color_14: #343434;
 $color_15: #45485f;
-$font-family_1: 'PT Serif', serif;
+$font-family_1: "PT Serif", serif;
 $background-color_1: #0088a9;
 
 *,
@@ -77,7 +77,7 @@ p {
 }
 .title {
   h2 {
-    font: 700 6.2rem/7.5rem 'PT Serif', serif;
+    font: 700 6.2rem/7.5rem "PT Serif", serif;
     margin-bottom: 3rem;
     z-index: 1;
   }
@@ -86,7 +86,7 @@ p {
     z-index: -1;
   }
   p {
-    font: 400 24px/28.44px 'Rubik', sans-serif;
+    font: 400 24px/28.44px "Rubik", sans-serif;
   }
 }
 .btn-primary-web {
@@ -108,7 +108,7 @@ p {
   padding: 1.5rem 3.5rem;
   outline: none;
   border-radius: 6px;
-  font: 400 1.8rem/22.77px 'Rubik', sans-serif;
+  font: 400 1.8rem/22.77px "Rubik", sans-serif;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -128,7 +128,7 @@ header {
     border-radius: 8px;
   }
   .navbar {
-    input[type='checkbox'] {
+    input[type="checkbox"] {
       display: none;
     }
     .hamburger-lines {
@@ -159,7 +159,7 @@ header {
       gap: 30px;
       li {
         a {
-          font: 400 1.8rem/2.5px 'PT Serif', serif;
+          font: 400 1.8rem/2.5px "PT Serif", serif;
           color: $color_3;
           &:hover {
             text-decoration: none;
@@ -170,7 +170,7 @@ header {
   }
   .sidebar-content-mobileview {
     a {
-      font: 400 1.8rem/3.3rem 'Rubik', sans-serif;
+      font: 400 1.8rem/3.3rem "Rubik", sans-serif;
       display: block;
       margin-bottom: 15px;
       color: $color_3;
@@ -193,7 +193,7 @@ header {
   .bottom-content-sidebar {
     .follow-us-on {
       h6 {
-        font: 400 1.8rem 'PT Serif', serif;
+        font: 400 1.8rem "PT Serif", serif;
       }
       .media-links {
         ul {
@@ -278,7 +278,7 @@ main {
           padding: 3rem 0;
           color: $color_3;
           border: 0;
-          font: 400 2.2rem 'Rubik', sans-serif;
+          font: 400 2.2rem "Rubik", sans-serif;
         }
       }
       .fas {
@@ -318,7 +318,7 @@ main {
     }
   }
   h3 {
-    font: 700 4.8rem/63.6px 'PT Serif', serif;
+    font: 700 4.8rem/63.6px "PT Serif", serif;
   }
   #accepting-payments {
     background: #fff3d6;
@@ -339,12 +339,12 @@ main {
           }
           .over-wrapper-content {
             h5 {
-              font: 400 1.5rem/1.8rem 'Roboto', sans-serif;
+              font: 400 1.5rem/1.8rem "Roboto", sans-serif;
               color: $color_3;
               opacity: 0.26;
             }
             h4 {
-              font: 400 2.4rem/3rem 'Rubik', sans-serif;
+              font: 400 2.4rem/3rem "Rubik", sans-serif;
             }
           }
         }
@@ -364,23 +364,23 @@ main {
         position: absolute;
         z-index: -1;
         background-size: cover;
-        content: '';
+        content: "";
         width: 5rem;
         height: 4.5rem;
         left: -2%;
         top: 1%;
-        background: url('/images/icons/blue-services.svg') no-repeat;
+        background: url("/images/icons/blue-services.svg") no-repeat;
       }
       &:before {
         position: absolute;
         z-index: -1;
         background-size: cover;
-        content: '';
+        content: "";
         width: 15.5rem;
         height: 12.3rem;
         right: -7%;
         bottom: -5%;
-        background: url('/images/icons/green-service.svg') no-repeat;
+        background: url("/images/icons/green-service.svg") no-repeat;
       }
       .services-wrapper {
         margin-top: 4rem;
@@ -389,15 +389,15 @@ main {
         .services-content {
           h6 {
             color: $color_5;
-            font: 400 1.8rem/3rem 'Roboto', sans-serif;
+            font: 400 1.8rem/3rem "Roboto", sans-serif;
           }
           h5 {
-            font: 400 4.2rem/5.4rem 'PT Serif', serif;
+            font: 400 4.2rem/5.4rem "PT Serif", serif;
             color: $color_3;
           }
           .bottom-content {
             p {
-              font: 400 2.4rem/3.6rem 'Roboto', sans-serif;
+              font: 400 2.4rem/3.6rem "Roboto", sans-serif;
             }
             a {
               img {
@@ -420,8 +420,8 @@ main {
     .title {
       z-index: 1;
       .title-bg-shape {
-        width: 41%;
-        top: -17%;
+        width: 35%;
+        top: -9%;
         left: -4%;
         -webkit-transform: rotate(-2deg);
         transform: rotate(-2deg);
@@ -449,10 +449,10 @@ main {
         }
         .card-title {
           margin-top: 2rem;
-          font: 700 2.5rem/4rem 'PT Serif', serif;
+          font: 700 2.5rem/4rem "PT Serif", serif;
         }
         .card-text {
-          font: 400 2rem/3.4rem 'Rubik', sans-serif;
+          font: 400 2rem/3.4rem "Rubik", sans-serif;
         }
       }
     }
@@ -500,14 +500,14 @@ main {
         box-shadow: 0px 30px 60px rgba(19, 24, 48, 0.0720283);
         border-radius: 15px;
         &:after {
-          content: '';
+          content: "";
           width: 15rem;
           height: 13rem;
           top: -10%;
           left: -5%;
           position: absolute;
           z-index: -1;
-          background: url('/images/haveq-after.png') no-repeat;
+          background: url("/images/haveq-after.png") no-repeat;
           background-size: cover;
         }
         .request-call-wrapper {
@@ -515,12 +515,12 @@ main {
           .heading {
             h3 {
               color: $color_7;
-              font: 700 3.2rem/4.2rem 'PT Serif', serif;
+              font: 700 3.2rem/4.2rem "PT Serif", serif;
             }
             p {
               margin-top: 1rem;
               color: $color_8;
-              font: 400 2rem/2.7rem 'PT Serif', serif;
+              font: 400 2rem/2.7rem "PT Serif", serif;
             }
           }
           form {
@@ -540,35 +540,35 @@ main {
                 border: 1.5px solid #d7d7d7;
                 border-radius: 5px;
                 padding: 0 20px !important;
-                font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                 color: $color_3;
                 outline: none;
-                font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                 color: $color_3;
                 outline: none;
-                font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                 color: $color_3;
                 outline: none;
-                font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                 color: $color_3;
                 outline: none;
                 &::-webkit-input-placeholder {
-                  font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                  font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                   color: $color_3;
                   outline: none;
                 }
                 &:-ms-input-placeholder {
-                  font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                  font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                   color: $color_3;
                   outline: none;
                 }
                 &::-ms-input-placeholder {
-                  font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                  font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                   color: $color_3;
                   outline: none;
                 }
                 &::placeholder {
-                  font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                  font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                   color: $color_3;
                   outline: none;
                 }
@@ -577,16 +577,16 @@ main {
                 border: 1.5px solid #d7d7d7;
                 border-radius: 5px;
                 padding: 0 20px !important;
-                font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                 color: $color_3;
                 outline: none;
-                font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                 color: $color_3;
                 outline: none;
-                font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                 color: $color_3;
                 outline: none;
-                font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+                font: 400 1.6rem/1.9rem "Roboto", sans-serif;
                 color: $color_3;
                 outline: none;
                 &::before {
@@ -599,7 +599,7 @@ main {
               height: 5.2rem;
             }
             .below-btn-content {
-              font: 400 1.6rem/1.9rem 'Roboto', sans-serif;
+              font: 400 1.6rem/1.9rem "Roboto", sans-serif;
               color: $color_11;
             }
           }
@@ -619,22 +619,22 @@ main {
             }
             h2 {
               color: $color_3;
-              font: 700 5rem/7.2rem 'PT Serif', serif;
+              font: 700 5rem/7.2rem "PT Serif", serif;
             }
             P {
               margin-top: 4rem;
               color: $color_12;
-              font: 400 2rem/3.4rem 'Rubik', sans-serif;
+              font: 400 2rem/3.4rem "Rubik", sans-serif;
             }
           }
           .feel-free {
             margin-top: 4rem;
             h6 {
-              font: 400 1.8rem 'Rubik', sans-serif;
+              font: 400 1.8rem "Rubik", sans-serif;
               color: $color_13;
             }
             h5 {
-              font: 400 2.4rem/4.4rem 'Rubik', sans-serif;
+              font: 400 2.4rem/4.4rem "Rubik", sans-serif;
               color: $color_3;
               a {
                 color: $color_5;
@@ -663,7 +663,7 @@ main {
           }
         }
         h5 {
-          font: 400 2rem/2.3rem 'Roboto', sans-serif;
+          font: 400 2rem/2.3rem "Roboto", sans-serif;
           color: $color_3;
           opacity: 0.3;
           margin-bottom: 25px;
@@ -676,17 +676,17 @@ main {
           .card-body {
             padding: 3.5rem 0;
             .date {
-              font: 400 1.7rem/2rem 'Rubik', sans-serif;
+              font: 400 1.7rem/2rem "Rubik", sans-serif;
               color: $color_5;
             }
             .card-title {
               margin: 2rem 0 3rem 0;
               color: $color_3;
-              font: 700 3.2rem/3.8rem 'PT Serif', serif;
+              font: 700 3.2rem/3.8rem "PT Serif", serif;
             }
             a {
               color: $color_3;
-              font: 400 1.8rem/2.5rem 'Rubik', sans-serif;
+              font: 400 1.8rem/2.5rem "Rubik", sans-serif;
             }
           }
         }
@@ -704,11 +704,11 @@ main {
       z-index: 2;
       .heading {
         h3 {
-          font: 700 4.8rem/3.7rem 'PT Serif', serif;
+          font: 700 4.8rem/3.7rem "PT Serif", serif;
         }
         p {
           margin: 3rem 0 0 0;
-          font: 400 2rem/2.8rem 'Rubik', sans-serif;
+          font: 400 2rem/2.8rem "Rubik", sans-serif;
         }
       }
     }
@@ -726,32 +726,32 @@ h2.accordion-header {
 }
 .banner-section {
   min-height: 100vh;
-  background: url('/images/banner-bg.png');
+  background: linear-gradient(to bottom, #e9f9ff, transparent);
   padding: 20rem 0 20rem 0;
   h3 {
-    font: 700 4.8rem/63.6px 'PT Serif', serif;
+    font: 700 4.8rem/63.6px "PT Serif", serif;
   }
   .content_wrapper {
     z-index: 2;
     &::after {
-      content: '';
+      content: "";
       width: 100%;
       height: 100%;
       position: absolute;
       z-index: -1;
       left: 0;
       top: 0;
-      background: url('/images/banner-left-side-shapes.png');
+      background: url("/images/banner-left-side-shapes.png");
       background-repeat: no-repeat;
       background-size: cover;
     }
     h1 {
-      font: 700 9rem/10.5rem 'PT Serif', serif;
+      font: 700 9rem/10.5rem "PT Serif", serif;
       margin-bottom: 30px;
       z-index: 2;
     }
     p {
-      font: 400 2.4rem/3.3rem 'Rubik', sans-serif;
+      font: 400 2.4rem/3.3rem "Rubik", sans-serif;
     }
     .title-bg-shape {
       top: 54%;
@@ -769,7 +769,7 @@ h2.accordion-header {
       gap: 25px;
       margin-top: 25px;
       h5 {
-        font: 400 1.4rem/16.6px 'Roboto', sans-serif;
+        font: 400 1.4rem/16.6px "Roboto", sans-serif;
         mix-blend-mode: normal;
         color: $color_3;
         opacity: 0.5;
@@ -802,7 +802,7 @@ footer {
       li {
         a {
           color: $color_3;
-          font: 400 2rem/2.4rem 'Rubik', sans-serif;
+          font: 400 2rem/2.4rem "Rubik", sans-serif;
         }
         .circle {
           width: 5px;
@@ -815,7 +815,7 @@ footer {
   }
   .sing-up-media-links {
     h4 {
-      font: 400 1.4rem/2.8rem 'Rubik', sans-serif;
+      font: 400 1.4rem/2.8rem "Rubik", sans-serif;
       color: $color_14;
       opacity: 0.5;
       letter-spacing: 1.4px;
@@ -824,27 +824,27 @@ footer {
       gap: 20px;
       input {
         height: 5rem;
-        font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+        font: 400 1.6rem/1.9rem "Rubik", sans-serif;
         border: 2px solid #000000;
         border-radius: 5px;
         &::-webkit-input-placeholder {
           color: $color_14;
-          font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+          font: 400 1.6rem/1.9rem "Rubik", sans-serif;
           opacity: 0.45;
         }
         &:-ms-input-placeholder {
           color: $color_14;
-          font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+          font: 400 1.6rem/1.9rem "Rubik", sans-serif;
           opacity: 0.45;
         }
         &::-ms-input-placeholder {
           color: $color_14;
-          font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+          font: 400 1.6rem/1.9rem "Rubik", sans-serif;
           opacity: 0.45;
         }
         &::placeholder {
           color: $color_14;
-          font: 400 1.6rem/1.9rem 'Rubik', sans-serif;
+          font: 400 1.6rem/1.9rem "Rubik", sans-serif;
           opacity: 0.45;
         }
         &:focus {
@@ -868,13 +868,13 @@ footer {
         width: 13rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        font: 400 1.6rem 'Rubik', sans-serif;
+        font: 400 1.6rem "Rubik", sans-serif;
       }
     }
   }
   .footer-bottom {
     p {
-      font: 400 1.8rem/2.1rem 'Rubik', sans-serif;
+      font: 400 1.8rem/2.1rem "Rubik", sans-serif;
       color: $color_14;
     }
   }
@@ -892,18 +892,30 @@ footer {
     }
   }
 }
+.footer-notice {
+  .container {
+    border-top: 1px solid #dcdcdc;
+    padding: 35px 15px;
+
+    li {
+      font: 400 1.3rem/1.8rem "Roboto", sans-serif;
+      color: #797979;
+      padding: 5px;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   html {
     font-size: 50%;
   }
   .title {
     h2 {
-      font: 700 4.2rem/4.5rem 'PT Serif', serif;
+      font: 700 4.2rem/4.5rem "PT Serif", serif;
       margin-bottom: 3rem;
       z-index: 1;
     }
     p {
-      font: 400 18px/20.44px 'Rubik', sans-serif;
+      font: 400 18px/20.44px "Rubik", sans-serif;
     }
   }
   .btn-web {
@@ -939,7 +951,7 @@ footer {
       display: none;
     }
     .navbar-container {
-      input[type='checkbox'] {
+      input[type="checkbox"] {
         display: block;
         position: absolute;
         display: block;
@@ -1009,15 +1021,13 @@ footer {
           -webkit-transition: -webkit-transform 0.3s ease-in-out;
           transition: -webkit-transform 0.3s ease-in-out;
           transition: transform 0.3s ease-in-out;
-          transition: transform 0.3s ease-in-out,
-            -webkit-transform 0.3s ease-in-out;
+          transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
         }
         .line2 {
           -webkit-transition: -webkit-transform 0.1s ease-in-out;
           transition: -webkit-transform 0.1s ease-in-out;
           transition: transform 0.1s ease-in-out;
-          transition: transform 0.1s ease-in-out,
-            -webkit-transform 0.1s ease-in-out;
+          transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
         }
         .line3 {
           -webkit-transform-origin: 0% 100%;
@@ -1025,8 +1035,7 @@ footer {
           -webkit-transition: -webkit-transform 0.3s ease-in-out;
           transition: -webkit-transform 0.3s ease-in-out;
           transition: transform 0.3s ease-in-out;
-          transition: transform 0.3s ease-in-out,
-            -webkit-transform 0.3s ease-in-out;
+          transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
         }
       }
       display: block;
@@ -1059,8 +1068,7 @@ footer {
         -webkit-transition: -webkit-transform 0.5s ease-in-out;
         transition: -webkit-transform 0.5s ease-in-out;
         transition: transform 0.5s ease-in-out;
-        transition: transform 0.5s ease-in-out,
-          -webkit-transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
         overflow: scroll;
         padding: 50px 15px 15px 15px;
         li {
@@ -1085,7 +1093,7 @@ footer {
   }
   main {
     h3 {
-      font: 700 2.8rem/32px 'PT Serif', serif;
+      font: 700 2.8rem/32px "PT Serif", serif;
     }
     #accepting-payments {
       .over-services {
@@ -1110,7 +1118,7 @@ footer {
             justify-content: start !important;
             margin-top: 20px;
             h5 {
-              font: 400 3.2rem/4.4rem 'PT Serif', serif;
+              font: 400 3.2rem/4.4rem "PT Serif", serif;
             }
           }
         }
@@ -1166,7 +1174,7 @@ footer {
         top: -6%;
         .inner-wrapper {
           &:after {
-            content: '';
+            content: "";
             width: 12rem;
             height: 10rem;
             z-index: -1;
@@ -1187,7 +1195,7 @@ footer {
             padding: 3rem 4rem;
             .heading {
               h2 {
-                font: 700 3rem/4.2rem 'PT Serif', serif;
+                font: 700 3rem/4.2rem "PT Serif", serif;
               }
               .main-title {
                 .title-bg-shape {
@@ -1201,7 +1209,7 @@ footer {
       .your-payment-over {
         .heading {
           h3 {
-            font: 700 3.6rem/4.5rem 'PT Serif', serif;
+            font: 700 3.6rem/4.5rem "PT Serif", serif;
           }
           p {
             margin-bottom: 5.5rem;
@@ -1245,7 +1253,7 @@ footer {
         margin-top: 25px;
       }
       h1 {
-        font: 700 4.2rem/4.5rem 'PT Serif', serif;
+        font: 700 4.2rem/4.5rem "PT Serif", serif;
       }
     }
   }
@@ -1284,7 +1292,7 @@ footer {
 @media (max-width: 500px) {
   header {
     .navbar-container {
-      input[type='checkbox'] {
+      input[type="checkbox"] {
         &:checked {
           ~ {
             .logo {
@@ -1296,7 +1304,7 @@ footer {
     }
   }
   .btn-web {
-    font: 400 1.6rem/22.77px 'Rubik', sans-serif;
+    font: 400 1.6rem/22.77px "Rubik", sans-serif;
   }
   .splide {
     img.single-wallet-slider {
@@ -1315,10 +1323,10 @@ footer {
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .title {
     h2 {
-      font: 700 5.2rem/7rem 'PT Serif', serif;
+      font: 700 5.2rem/7rem "PT Serif", serif;
     }
     p {
-      font: 400 18px/24.44px 'Rubik', sans-serif;
+      font: 400 18px/24.44px "Rubik", sans-serif;
     }
   }
   .tab-mt-30 {
@@ -1348,11 +1356,11 @@ footer {
           .services-content {
             padding-left: 0;
             h5 {
-              font: 400 3.2rem/4.4rem 'PT Serif', serif;
+              font: 400 3.2rem/4.4rem "PT Serif", serif;
             }
             .bottom-content {
               p {
-                font: 400 1.8rem/2.6rem 'Roboto', sans-serif;
+                font: 400 1.8rem/2.6rem "Roboto", sans-serif;
               }
             }
           }
@@ -1360,7 +1368,7 @@ footer {
       }
       .having-issues {
         h3 {
-          font: 700 2.8rem/43.6px 'PT Serif', serif;
+          font: 700 2.8rem/43.6px "PT Serif", serif;
           margin-bottom: 40px;
         }
       }
@@ -1423,10 +1431,10 @@ footer {
           .have-questions-wrapper {
             .heading {
               h2 {
-                font: 700 2.8rem/4.2rem 'PT Serif', serif;
+                font: 700 2.8rem/4.2rem "PT Serif", serif;
               }
               P {
-                font: 400 1.8rem/2.4rem 'Rubik', sans-serif;
+                font: 400 1.8rem/2.4rem "Rubik", sans-serif;
               }
             }
           }
@@ -1435,7 +1443,7 @@ footer {
       .your-payment-over {
         .heading {
           h3 {
-            font: 700 2.8rem/2.7rem 'PT Serif', serif;
+            font: 700 2.8rem/2.7rem "PT Serif", serif;
           }
           p {
             margin-bottom: 5rem;
@@ -1449,7 +1457,7 @@ footer {
           .card {
             .card-body {
               .card-title {
-                font: 700 2rem/2.6rem 'PT Serif', serif;
+                font: 700 2rem/2.6rem "PT Serif", serif;
               }
             }
           }
@@ -1503,14 +1511,14 @@ footer {
     h3 {
       margin-top: 1.5rem;
       color: $color_15;
-      font: 700 4rem/4.6rem 'PT Serif', serif;
+      font: 700 4rem/4.6rem "PT Serif", serif;
     }
     h4 {
       margin-top: 1.5rem !important;
-      font: 400 3.2rem/3.6rem 'PT Serif', serif;
+      font: 400 3.2rem/3.6rem "PT Serif", serif;
     }
     p {
-      font: 400 1.8rem/3rem 'Rubik', sans-serif;
+      font: 400 1.8rem/3rem "Rubik", sans-serif;
       margin-top: 2rem;
       color: $color_3;
     }
@@ -1519,7 +1527,7 @@ footer {
       li {
         margin-top: 1.5rem;
         list-style: inherit;
-        font: 400 1.8rem/3rem 'Rubik', sans-serif;
+        font: 400 1.8rem/3rem "Rubik", sans-serif;
       }
     }
   }
