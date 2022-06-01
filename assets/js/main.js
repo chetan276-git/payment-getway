@@ -54,3 +54,7 @@ async function callBack(e) {
     document.querySelector("#callBackAlert").innerHTML = "Something went wrong. Please try again later.";
   }
 }
+(async () => {
+  if (window.location.search.includes("utm_"))
+    document.cookie = `utm_tracking=${window.location.search};domain=.crypwave.com`;
+})();
